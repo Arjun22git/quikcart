@@ -1,0 +1,65 @@
+<div class="container">
+    <h1>Seller Products</h1>
+
+    <!-- Button Container for Add, Sort, and Search -->
+    <div class="button-container">
+        <button (click)="addProduct()" class="btn btn-primary btn-sm add-product-btn">
+            <i class="bi bi-plus-circle"></i> Add
+        </button>
+        <button (click)="sortProducts()" class="btn btn-secondary btn-sm">
+            <i class="bi bi-sort-alpha-down"></i> Sort
+        </button>
+        
+        <div class="search-container">
+            <input type="text" [(ngModel)]="searchTerm" (input)="searchProducts()" placeholder="Search products..." class="form-control search-input" />
+            <button class="btn btn-primary search-button">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+    
+    
+
+    <!-- Spinner for loading state -->
+    @if(loading) {
+        <ngx-spinner type="ball-scale-multiple" [bdColor]="'rgba(51, 51, 51, 0.8)'" [size]="'large'" [color]="'#fff'" [fullScreen]="true"></ngx-spinner>
+    }
+
+    <!-- Message if no products are available -->
+    @if((searchTerm ? searchProducts().length : products.length) === 0 && !loading) {
+        <div class="no-products-message">
+            <p>No products available. Please add a new product.</p>
+        </div>
+    }
+
+    <!-- Products List -->
+    @if(searchTerm ? searchProducts().length > 0 : products.length > 0) {
+        <div class="products-grid">
+            @for(product of (searchTerm ? searchProducts() : products); track $index) {
+                <div class="product-card">
+                    <img *ngIf="product.imageUrl" [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" />
+                    <h2>{{ product.name }}</h2>
+                    <p><strong>Category:</strong> {{ product.category }}</p>
+                    <p><strong>Price:</strong> {{ product.price | currency:'INR':'symbol':'1.2-2' }}</p>
+                    <div class="button-group">
+                        <button (click)="editProduct(product.productId)" class="btn btn-primary edit-btn">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </button>
+                        <button (click)="deleteProduct(product.productId)" class="btn btn-danger delete-btn">
+                            <i class="bi bi-trash"></i> Delete
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+<div>
+    <app-delete-product #deleteProductModal 
+    [productName]="getProductNameById(productToDeleteId)" 
+    (confirm)="confirmDelete()" 
+    (cancel)="cancelDelete()" ></app-delete-product>
+    <app-addproduct #addProductModal (productAdded)="onProductAdded($event)" ></app-addproduct>
+    <app-edit-product #editProductModal (productEdited)="onProductEdited($event)" ></app-edit-product>
+</div>
+
+</div>

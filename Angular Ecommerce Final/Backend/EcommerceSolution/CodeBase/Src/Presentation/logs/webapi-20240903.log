@@ -1,0 +1,272 @@
+2024-09-03 16:52:02.236 +05:30  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-03 16:52:02.678 +05:30  DBG  An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-03 16:52:02.947 +05:30  INF  User profile is available. Using 'C:\Users\arjun.hariprasad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 16:52:03.374 +05:30  WRN  Navigations 'Order.Payments' and 'Payment.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.380 +05:30  WRN  Navigations 'Order.Return' and 'Return.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.385 +05:30  WRN  Navigations 'Payment.Return' and 'Return.Payment' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.463 +05:30  WRN  Navigations 'Order.Payments' and 'Payment.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.466 +05:30  WRN  Navigations 'Payment.Order' and 'Order.Payments' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.468 +05:30  WRN  Navigations 'Payment.Order' and 'Order.Payments' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.469 +05:30  WRN  Navigations 'Payment.Order' and 'Order.Payments' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.472 +05:30  WRN  Navigations 'Order.Return' and 'Return.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.474 +05:30  WRN  Navigations 'Return.Order' and 'Order.Return' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.476 +05:30  WRN  Navigations 'Return.Order' and 'Order.Return' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.478 +05:30  WRN  Navigations 'Return.Order' and 'Order.Return' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-09-03 16:52:03.495 +05:30  DBG  The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-09-03 16:52:03.498 +05:30  DBG  The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-09-03 16:52:03.623 +05:30  DBG  The property 'Product.UserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-09-03 16:52:03.760 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-03 16:52:03.884 +05:30  DBG  Compiling query expression: 
+'DbSet<IdentityRole<Guid>>()
+    .FirstOrDefault(r => r.NormalizedName == __normalizedName_0)'
+2024-09-03 16:52:04.031 +05:30  DBG  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityRole<Guid>>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityRole<Guid>>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityRole<Guid>.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityRole<Guid>.ConcurrencyStamp (string) Concurrency, 1], [Property: IdentityRole<Guid>.Name (string) MaxLength(256), 2], [Property: IdentityRole<Guid>.NormalizedName (string) Index MaxLength(256), 3] }
+            SELECT TOP(1) a.Id, a.ConcurrencyStamp, a.Name, a.NormalizedName
+            FROM AspNetRoles AS a
+            WHERE a.NormalizedName == @__normalizedName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityRole<Guid>>, 
+        Persistance.EcommerceDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-09-03 16:52:04.068 +05:30  DBG  Creating DbConnection.
+2024-09-03 16:52:04.091 +05:30  DBG  Created DbConnection. (25ms).
+2024-09-03 16:52:04.095 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.560 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.563 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-09-03 16:52:04.571 +05:30  DBG  Created DbCommand for 'ExecuteReader' (4ms).
+2024-09-03 16:52:04.579 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (15ms).
+2024-09-03 16:52:04.587 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-09-03 16:52:04.754 +05:30  INF  Executed DbCommand (166ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-09-03 16:52:04.794 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-03 16:52:04.812 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.820 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 58ms reading results.
+2024-09-03 16:52:04.826 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.832 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (5ms).
+2024-09-03 16:52:04.837 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.839 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.840 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-09-03 16:52:04.841 +05:30  DBG  Created DbCommand for 'ExecuteReader' (1ms).
+2024-09-03 16:52:04.842 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-09-03 16:52:04.843 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-09-03 16:52:04.847 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-09-03 16:52:04.850 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-03 16:52:04.851 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.852 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-09-03 16:52:04.853 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.854 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-09-03 16:52:04.855 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.856 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.857 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-09-03 16:52:04.858 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-03 16:52:04.859 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-09-03 16:52:04.860 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-09-03 16:52:04.862 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-09-03 16:52:04.864 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-03 16:52:04.866 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.867 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-09-03 16:52:04.868 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.869 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-09-03 16:52:04.875 +05:30  DBG  Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)'
+2024-09-03 16:52:04.882 +05:30  DBG  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.CreatedAt (DateTime) Required, 3], [Property: User.Email (string) MaxLength(256), 4], [Property: User.EmailConfirmed (bool) Required, 5], [Property: User.IsDeleted (bool) Required, 6], [Property: User.IsVerified (bool) Required, 7], [Property: User.LockoutEnabled (bool) Required, 8], [Property: User.LockoutEnd (DateTimeOffset?), 9], [Property: User.NormalizedEmail (string) Index MaxLength(256), 10], [Property: User.NormalizedUserName (string) Index MaxLength(256), 11], [Property: User.PasswordHash (string), 12], [Property: User.PhoneNumber (string), 13], [Property: User.PhoneNumberConfirmed (bool) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UpdatedAt (DateTime) Required, 17], [Property: User.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.CreatedAt, a.Email, a.EmailConfirmed, a.IsDeleted, a.IsVerified, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UpdatedAt, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Persistance.EcommerceDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-09-03 16:52:04.887 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.888 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.889 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-09-03 16:52:04.890 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-03 16:52:04.890 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-09-03 16:52:04.891 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-03 16:52:04.912 +05:30  INF  Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-03 16:52:04.932 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-03 16:52:04.960 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.962 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 46ms reading results.
+2024-09-03 16:52:04.963 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.964 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (1ms).
+2024-09-03 16:52:04.967 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-09-03 16:52:04.969 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-09-03 16:52:04.971 +05:30  DBG  Disposed connection to database '' on server '' (1ms).
+2024-09-03 16:52:04.974 +05:30  DBG  Hosting starting
+2024-09-03 16:52:04.980 +05:30  DBG  Reading data from file 'C:\Users\arjun.hariprasad\AppData\Local\ASP.NET\DataProtection-Keys\key-36f6fa2d-df91-4e24-9271-a530e4737995.xml'.
+2024-09-03 16:52:05.032 +05:30  DBG  Found key {36f6fa2d-df91-4e24-9271-a530e4737995}.
+2024-09-03 16:52:05.045 +05:30  DBG  Considering key {36f6fa2d-df91-4e24-9271-a530e4737995} with expiration date 2024-10-20 08:26:28Z as default key.
+2024-09-03 16:52:05.049 +05:30  DBG  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-03 16:52:05.051 +05:30  DBG  Decrypting secret element using Windows DPAPI.
+2024-09-03 16:52:05.053 +05:30  DBG  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-03 16:52:05.056 +05:30  DBG  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-03 16:52:05.060 +05:30  DBG  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-03 16:52:05.064 +05:30  DBG  Using key {36f6fa2d-df91-4e24-9271-a530e4737995} as the default key.
+2024-09-03 16:52:05.065 +05:30  DBG  Key ring with default key {36f6fa2d-df91-4e24-9271-a530e4737995} was loaded during application startup.
+2024-09-03 16:52:05.426 +05:30  INF  Now listening on: https://localhost:7113
+2024-09-03 16:52:05.427 +05:30  INF  Now listening on: http://localhost:5081
+2024-09-03 16:52:05.428 +05:30  DBG  Loaded hosting startup assembly Web.Ecommerce
+2024-09-03 16:52:05.429 +05:30  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-03 16:52:05.429 +05:30  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-03 16:52:05.430 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-09-03 16:52:05.431 +05:30  INF  Hosting environment: Development
+2024-09-03 16:52:05.431 +05:30  INF  Content root path: C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Presentation\Web.Ecommerce
+2024-09-03 16:52:05.433 +05:30  DBG  Hosting started
+2024-09-03 16:52:05.704 +05:30  DBG  Connection id "0HN6C1AI3S8MA" accepted.
+2024-09-03 16:52:05.706 +05:30  DBG  Connection id "0HN6C1AI3S8MA" started.
+2024-09-03 16:52:05.711 +05:30  DBG  Connection id "0HN6C1AI3S8MB" accepted.
+2024-09-03 16:52:05.718 +05:30  DBG  Connection id "0HN6C1AI3S8MB" started.
+2024-09-03 16:52:05.718 +05:30  DBG  Connection id "0HN6C1AI3S8MB" received FIN.
+2024-09-03 16:52:05.718 +05:30  DBG  Connection id "0HN6C1AI3S8MA" received FIN.
+2024-09-03 16:52:05.731 +05:30  DBG  Failed to authenticate HTTPS connection.System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2024-09-03 16:52:05.731 +05:30  DBG  Failed to authenticate HTTPS connection.System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2024-09-03 16:52:05.743 +05:30  DBG  Connection id "0HN6C1AI3S8MB" stopped.
+2024-09-03 16:52:05.743 +05:30  DBG  Connection id "0HN6C1AI3S8MA" stopped.
+2024-09-03 16:52:05.745 +05:30  DBG  Connection id "0HN6C1AI3S8MA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-03 16:52:05.745 +05:30  DBG  Connection id "0HN6C1AI3S8MB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-03 16:52:06.373 +05:30  DBG  Connection id "0HN6C1AI3S8MC" accepted.
+2024-09-03 16:52:06.385 +05:30  DBG  Connection id "0HN6C1AI3S8MD" accepted.
+2024-09-03 16:52:06.389 +05:30  DBG  Connection id "0HN6C1AI3S8MC" started.
+2024-09-03 16:52:06.391 +05:30  DBG  Connection id "0HN6C1AI3S8MD" started.
+2024-09-03 16:52:06.425 +05:30  DBG  Connection id "0HN6C1AI3S8MD" received FIN.
+2024-09-03 16:52:06.438 +05:30  DBG  Connection 0HN6C1AI3S8MD established using the following protocol: "Tls12"
+2024-09-03 16:52:06.438 +05:30  DBG  Connection 0HN6C1AI3S8MC established using the following protocol: "Tls12"
+2024-09-03 16:52:06.511 +05:30  DBG  Connection id "0HN6C1AI3S8MD" is closed. The last processed stream ID was 0.
+2024-09-03 16:52:06.515 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-09-03 16:52:06.518 +05:30  DBG  Connection id "0HN6C1AI3S8MD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-03 16:52:06.558 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-09-03 16:52:06.559 +05:30  DBG  The connection queue processing loop for 0HN6C1AI3S8MD completed.
+2024-09-03 16:52:06.568 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-09-03 16:52:06.570 +05:30  DBG  Connection id "0HN6C1AI3S8MD" stopped.
+2024-09-03 16:52:06.570 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-09-03 16:52:06.573 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-09-03 16:52:06.575 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "HEADERS" frame for stream ID 1 with length 469 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-09-03 16:52:06.607 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-09-03 16:52:06.626 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.html - null null
+2024-09-03 16:52:06.773 +05:30  DBG  Wildcard detected, all requests with hosts will be allowed.
+2024-09-03 16:52:06.775 +05:30  VRB  All hosts are allowed.
+2024-09-03 16:52:06.798 +05:30  DBG  No candidates found for the request path '/swagger/index.html'
+2024-09-03 16:52:06.800 +05:30  DBG  Request did not match any endpoints
+2024-09-03 16:52:06.891 +05:30  DBG  Response markup is scheduled to include Browser Link script injection.
+2024-09-03 16:52:06.893 +05:30  DBG  Response markup is scheduled to include browser refresh script injection.
+2024-09-03 16:52:06.895 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "HEADERS" frame for stream ID 1 with length 66 and flags "END_HEADERS".
+2024-09-03 16:52:06.901 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 1 with length 698 and flags "NONE".
+2024-09-03 16:52:06.901 +05:30  DBG  Response markup was updated to include Browser Link script injection.
+2024-09-03 16:52:06.903 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 1 with length 438 and flags "NONE".
+2024-09-03 16:52:06.905 +05:30  DBG  Response markup was updated to include browser refresh script injection.
+2024-09-03 16:52:06.908 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM".
+2024-09-03 16:52:06.909 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.html - 200 null text/html;charset=utf-8 288.2362ms
+2024-09-03 16:52:06.916 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "HEADERS" frame for stream ID 3 with length 148 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-09-03 16:52:06.921 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "HEADERS" frame for stream ID 5 with length 67 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-09-03 16:52:06.924 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "HEADERS" frame for stream ID 7 with length 35 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-09-03 16:52:06.926 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 16:52:06.926 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.css - null null
+2024-09-03 16:52:06.926 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "HEADERS" frame for stream ID 9 with length 57 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-09-03 16:52:06.927 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.js - null null
+2024-09-03 16:52:06.935 +05:30  VRB  All hosts are allowed.
+2024-09-03 16:52:06.938 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/_vs/browserLink - null null
+2024-09-03 16:52:06.940 +05:30  VRB  All hosts are allowed.
+2024-09-03 16:52:06.941 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "HEADERS" frame for stream ID 5 with length 60 and flags "END_HEADERS".
+2024-09-03 16:52:06.941 +05:30  DBG  No candidates found for the request path '/swagger/index.css'
+2024-09-03 16:52:06.944 +05:30  DBG  No candidates found for the request path '/swagger/index.js'
+2024-09-03 16:52:06.945 +05:30  DBG  Request did not match any endpoints
+2024-09-03 16:52:06.948 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 5 with length 13762 and flags "NONE".
+2024-09-03 16:52:06.949 +05:30  DBG  Request did not match any endpoints
+2024-09-03 16:52:06.954 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.js - 200 null application/javascript;charset=utf-8 27.1357ms
+2024-09-03 16:52:06.955 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "HEADERS" frame for stream ID 7 with length 41 and flags "END_HEADERS".
+2024-09-03 16:52:06.955 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 30.0936ms
+2024-09-03 16:52:06.957 +05:30  VRB  Range header's value is empty.
+2024-09-03 16:52:06.960 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 7 with length 3005 and flags "END_STREAM".
+2024-09-03 16:52:06.969 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 5 with length 0 and flags "END_STREAM".
+2024-09-03 16:52:06.971 +05:30  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-03 16:52:06.972 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "HEADERS" frame for stream ID 3 with length 76 and flags "END_HEADERS".
+2024-09-03 16:52:06.974 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.css - 200 202 text/css 50.5769ms
+2024-09-03 16:52:06.975 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 3 with length 202 and flags "NONE".
+2024-09-03 16:52:06.982 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 3 with length 0 and flags "END_STREAM".
+2024-09-03 16:52:06.992 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "HEADERS" frame for stream ID 9 with length 119 and flags "END_HEADERS".
+2024-09-03 16:52:06.998 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 9986 and flags "NONE".
+2024-09-03 16:52:07.005 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.008 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.011 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.017 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.019 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.021 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.022 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.024 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.026 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.028 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.031 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.033 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.035 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.037 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 10240 and flags "NONE".
+2024-09-03 16:52:07.038 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 160 and flags "NONE".
+2024-09-03 16:52:07.039 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.1156ms
+2024-09-03 16:52:07.040 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 9 with length 0 and flags "END_STREAM".
+2024-09-03 16:52:07.150 +05:30  VRB  Connection id "0HN6C1AI3S8MC" received "HEADERS" frame for stream ID 11 with length 74 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-09-03 16:52:07.152 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - null null
+2024-09-03 16:52:07.155 +05:30  VRB  All hosts are allowed.
+2024-09-03 16:52:07.155 +05:30  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-03 16:52:07.156 +05:30  DBG  Request did not match any endpoints
+2024-09-03 16:52:07.292 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "HEADERS" frame for stream ID 11 with length 35 and flags "END_HEADERS".
+2024-09-03 16:52:07.294 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 11 with length 16384 and flags "NONE".
+2024-09-03 16:52:07.296 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 11 with length 6577 and flags "NONE".
+2024-09-03 16:52:07.300 +05:30  VRB  Connection id "0HN6C1AI3S8MC" sending "DATA" frame for stream ID 11 with length 0 and flags "END_STREAM".
+2024-09-03 16:52:07.300 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 148.3174ms
+2024-09-03 16:52:08.778 +05:30  DBG  Connection id "0HN6C1AI3S8MC" received FIN.
+2024-09-03 16:52:08.780 +05:30  DBG  Connection id "0HN6C1AI3S8MC" is closed. The last processed stream ID was 11.
+2024-09-03 16:52:08.780 +05:30  DBG  The connection queue processing loop for 0HN6C1AI3S8MC completed.
+2024-09-03 16:52:08.781 +05:30  DBG  Connection id "0HN6C1AI3S8MC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-03 16:52:08.796 +05:30  DBG  Connection id "0HN6C1AI3S8MC" stopped.

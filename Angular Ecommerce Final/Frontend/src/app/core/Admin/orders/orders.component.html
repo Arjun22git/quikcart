@@ -1,0 +1,27 @@
+<div class="orders-table">
+    <h2>Orders Overview</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Order Date</th>
+          <th>Total Amount</th>
+          <th>Order Status</th>
+          <th>Shipping Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(order of orders;track $index){
+            <tr>
+                <td>{{ order.customerName }}</td>
+                <td>{{ order.orderDate | date: 'short' }}</td>
+                <td>{{ order.totalAmount | currency:'INR':'symbol':'1.2-2' }}</td>
+                <td>{{ order.orderStatus }}</td>
+                <td>{{ order.shippingAddress.name }}, {{ order.shippingAddress.address }}<br/>{{ order.shippingAddress.phone }}</td>
+              </tr>
+
+        }
+      </tbody>
+    </table>
+  </div>
+  

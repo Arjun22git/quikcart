@@ -1,0 +1,11 @@
+@if(visible){
+    <div class="modal">
+        <div class="modal-content">
+          <h2>Confirm Deletion</h2>
+          <p>Are you sure you want to delete {{ productName }}?</p>
+          <button (click)="onConfirm()" class="btn btn-danger">Yes, Delete</button>
+          <button (click)="onCancel()" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+}
+  

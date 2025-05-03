@@ -1,0 +1,70 @@
+
+<nav class="navbar navbar-expand-lg bg-p">
+    <div class="container-fluid">
+    <a class="navbar-brand text-white" routerLink="/homepage">
+        <img src="assets/logo.png" alt="Logo" class="navbar-logo" width="60px" height="50px">Qwikart
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/homepage">
+            <i class="bi bi-house"></i> Home
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/products">
+            <i class="bi bi-box"></i> Products
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-card-list"></i> <span> Categories</span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Fashion</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Home Decor</a></li>
+            <li><a class="dropdown-item" href="#">Groceries</a></li>
+            <li><a class="dropdown-item" href="#">Footwear</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Men</a></li>
+            <li><a class="dropdown-item" href="#">Women</a></li>
+            <li><a class="dropdown-item" href="#">Kids</a></li>
+            </ul>
+        </li>
+        </ul>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <ul class="icons d-flex ms-3">
+            <li class="icon-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" data-bs-trigger="hover focus" title="User Profile" data-bs-placement="bottom">
+                    <i class="bi bi-person"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item text-dark" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" (click)="logout()">Logout</a></li>
+                </ul>
+            </li>
+            <li class="icon-item">
+                <a href="#" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Wishlist" data-bs-placement="bottom">
+                    <i class="bi bi-heart"></i>
+                </a>
+            </li>
+            <li class="icon-item">
+                <a routerLink="/cart" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Cart" data-bs-placement="bottom">
+                    <i class="bi bi-cart"></i>
+                    <span #cartBadge class="badge bg-danger" id="cart-badge" style="font-size: 0.75rem; padding: 0.25em 0.4em;">{{Quantity}}</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    </div>
+</nav>
+

@@ -1,0 +1,32 @@
+.section{
+    font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #1f2029;
+	overflow-x: hidden;
+}
+
+.card{
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    color: #408EC6;
+}
+
+.otp-form .otp-field {
+    
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	font-size: 2rem;
+	line-height: 4rem;
+	text-align: center;
+	border: none;
+	border-bottom: 2px solid #408EC6;
+    padding: 2px;
+	outline: none;
+}
+
+.otp-form .otp-field:focus {
+	border-bottom-color: #408EC6;
+}

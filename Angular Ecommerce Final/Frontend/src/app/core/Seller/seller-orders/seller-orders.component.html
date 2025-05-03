@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Order Summary</h1>
+    <table class="order-table">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Total Amount (INR)</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th>Shipping Address</th>
+                <th>Order Items</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(order of orders; track $index) {
+                <tr>
+                    <td>{{ order.customerName }}</td>
+                    <td>{{ order.totalAmount | currency:'INR':'symbol':'1.2-2' }}</td>
+                    <td>{{ formatDate(order.orderDate) }}</td>
+                    <td>{{ order.orderStatus }}</td>
+                    <td>
+                        <p><strong>Name:</strong> {{ parseShippingAddress(order.shippingAddress).name }}</p>
+                        <p><strong>Address:</strong> {{ parseShippingAddress(order.shippingAddress).address }}</p>
+                        <p><strong>Phone:</strong> {{ parseShippingAddress(order.shippingAddress).phone }}</p>
+                    </td>
+                    <td>
+                        <ul>
+                            @for(item of order.orderItems; track $index) {
+                                <li>Product ID: {{ item.productId }}, Quantity: {{ item.quantity }}</li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

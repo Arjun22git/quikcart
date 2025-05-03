@@ -1,0 +1,141 @@
+<app-navbar></app-navbar>
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-8 bg-light">
+                @if((cartItems.length) === 0) {
+                    <div class="no-products-message">
+                        <h3> <i class="bi bi-exclamation-circle"></i> Cart Empty</h3>
+                    </div>
+                }
+                @for (item of cartItems; track $index) {
+                    <div class="card border shadow-none">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start border-bottom pb-3">
+                                <div class="me-4">
+                                    <img src={{item.imgurl}} alt="" class="avatar-lg rounded">
+                                </div>
+                                <div class="flex-grow-1 align-self-center overflow-hidden">
+                                    <div>
+                                        <h5 class="text-truncate font-size-18"><a href="#" class="text-dark">{{item.productName}}</a></h5>
+                                       
+                                        <p class="mb-0 mt-1">Color : <span class="fw-medium">Gray</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-0 ms-2">
+                                    <ul class="list-inline mb-0 font-size-16">
+                                        <li class="list-inline-item">
+                                            <a (click)="removeFromCart(item.cartItemId)" class="text-muted px-1">
+                                                <i class="bi bi-trash"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="text-muted px-1">
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mt-3">
+                                            <p class="text-muted mb-2">Price</p>
+                                            <h5 class="mb-0 mt-2">
+                                                <span class="text-muted me-2">
+                                                    <del class="font-size-16 fw-normal">{{ item.price | currency:'INR':'symbol':'1.2-2' }}</del>
+                                                </span>
+                                                {{ item.price | currency:'INR':'symbol':'1.2-2' }}
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <app-quantity [quantity]="item.quantity" (quantityChange)="updateQuantity(item, $event)"></app-quantity>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mt-3">
+                                            <p class="text-muted mb-2">Total</p>
+                                            <h5>{{item.price * item.quantity | currency:'INR':'symbol':'1.2-2' }}   </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+                <!-- end card -->
+                <div class="row my-4">
+                    <div class="col-sm-6">
+                        <a routerLink="/homepage" class="btn btn-tertiary">
+                            <i class="bi bi-arrow-left-circle"></i> Continue Shopping </a>
+                    </div> <!-- end col -->
+                    @if((cartItems.length) !== 0) {
+                        <div class="col-sm-6">
+                            <div class="text-sm-end mt-2 mt-sm-0">
+                                <button (click)="checkout()" class="btn btn-primary">
+                                    <i class="bi bi-bag-check"></i> Checkout 
+                                </button>
+                            </div>
+                        </div> <!-- end col -->
+                        
+                    }
+                    
+                </div> <!-- end row-->
+            </div>
+
+            <div class="col-xl-4">
+                <div class="mt-5 mt-lg-0">
+                    <div class="card border shadow-none">
+                        <div class="card-header bg-transparent border-bottom py-3 px-4">
+                            <h5 class="font-size-16 mb-0">Order Summary</h5>
+                        </div>
+                        <div class="card-body p-4 pt-2">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>Sub Total :</td>
+                                            <td class="text-end">{{cartTotal | currency:'INR':'symbol':'1.2-2'}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Discount : </td>
+                                            <td class="text-end">{{0| currency:'INR':'symbol':'1.2-2'}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping Charges :</td>
+                                            @if((cartItems.length) !== 0) {
+                                            <td class="text-end text-danger"><del class="font-size-16 fw-normal">{{299| currency:'INR':'symbol':'1.2-2'}}</del> <span class="text-end text-success">Free!</span></td>
+                                            }
+                                            @else{
+                                                <td class="text-end">{{0| currency:'INR':'symbol':'1.2-2'}}</td>
+                                            }
+                                        </tr>
+                                        <tr class="bg-light">
+                                            <th>Total :</th>
+                                            <td class="text-end">
+                                                <span class="fw-bold">{{cartTotal | currency:'INR':'symbol':'1.2-2' }}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- end table-responsive -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <ngx-spinner
+    bdColor="rgba(0, 0, 0, 0.8)"
+    size="medium"
+    color="#fff"
+    type="ball-scale-multiple" 
+    [fullScreen]="false"
+    ><p style="color: white">Loading...</p>
+    </ngx-spinner>
+</section>

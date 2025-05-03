@@ -1,0 +1,1044 @@
+2024-10-04 14:57:49.677 +05:30  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-04 14:57:49.961 +05:30  DBG  An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-04 14:57:50.086 +05:30  INF  User profile is available. Using 'C:\Users\arjun.hariprasad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 14:57:50.422 +05:30  WRN  Navigations 'Order.Payments' and 'Payment.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.427 +05:30  WRN  Navigations 'Order.Return' and 'Return.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.432 +05:30  WRN  Navigations 'Payment.Return' and 'Return.Payment' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.509 +05:30  WRN  Navigations 'Order.Payments' and 'Payment.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.512 +05:30  WRN  Navigations 'Payment.Order' and 'Order.Payments' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.514 +05:30  WRN  Navigations 'Payment.Order' and 'Order.Payments' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.515 +05:30  WRN  Navigations 'Payment.Order' and 'Order.Payments' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.518 +05:30  WRN  Navigations 'Order.Return' and 'Return.Order' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.520 +05:30  WRN  Navigations 'Return.Order' and 'Order.Return' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.521 +05:30  WRN  Navigations 'Return.Order' and 'Order.Return' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.523 +05:30  WRN  Navigations 'Return.Order' and 'Order.Return' were separated into two relationships since the [ForeignKey] attribute was specified on navigations on both sides.
+2024-10-04 14:57:50.545 +05:30  DBG  The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-10-04 14:57:50.548 +05:30  DBG  The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-10-04 14:57:50.675 +05:30  DBG  The property 'Product.UserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-10-04 14:57:50.701 +05:30  WRN  No store type was specified for the decimal property 'CartTotal' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-10-04 14:57:50.702 +05:30  WRN  No store type was specified for the decimal property 'Price' on entity type 'CartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-10-04 14:57:50.826 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-04 14:57:50.922 +05:30  DBG  Compiling query expression: 
+'DbSet<IdentityRole<Guid>>()
+    .FirstOrDefault(r => r.NormalizedName == __normalizedName_0)'
+2024-10-04 14:57:51.060 +05:30  DBG  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityRole<Guid>>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityRole<Guid>>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityRole<Guid>.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityRole<Guid>.ConcurrencyStamp (string) Concurrency, 1], [Property: IdentityRole<Guid>.Name (string) MaxLength(256), 2], [Property: IdentityRole<Guid>.NormalizedName (string) Index MaxLength(256), 3] }
+            SELECT TOP(1) a.Id, a.ConcurrencyStamp, a.Name, a.NormalizedName
+            FROM AspNetRoles AS a
+            WHERE a.NormalizedName == @__normalizedName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityRole<Guid>>, 
+        Persistance.EcommerceDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-04 14:57:51.098 +05:30  DBG  Creating DbConnection.
+2024-10-04 14:57:51.122 +05:30  DBG  Created DbConnection. (26ms).
+2024-10-04 14:57:51.127 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.410 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.414 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:57:51.422 +05:30  DBG  Created DbCommand for 'ExecuteReader' (4ms).
+2024-10-04 14:57:51.430 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (15ms).
+2024-10-04 14:57:51.437 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-04 14:57:51.499 +05:30  INF  Executed DbCommand (61ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-04 14:57:51.644 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:57:51.667 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.675 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 169ms reading results.
+2024-10-04 14:57:51.679 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.685 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (5ms).
+2024-10-04 14:57:51.842 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.844 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.846 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:57:51.847 +05:30  DBG  Created DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:57:51.848 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-10-04 14:57:51.849 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-04 14:57:51.854 +05:30  INF  Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-04 14:57:51.858 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:57:51.859 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.860 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-10-04 14:57:51.861 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.863 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (1ms).
+2024-10-04 14:57:51.865 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.866 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.867 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:57:51.868 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:57:51.869 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:57:51.870 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-04 14:57:51.875 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-10-04 14:57:51.880 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:57:51.881 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.882 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-10-04 14:57:51.883 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.884 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (1ms).
+2024-10-04 14:57:51.928 +05:30  DBG  Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)'
+2024-10-04 14:57:51.935 +05:30  DBG  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.CreatedAt (DateTime) Required, 3], [Property: User.Email (string) MaxLength(256), 4], [Property: User.EmailConfirmed (bool) Required, 5], [Property: User.IsDeleted (bool) Required, 6], [Property: User.IsVerified (bool) Required, 7], [Property: User.LockoutEnabled (bool) Required, 8], [Property: User.LockoutEnd (DateTimeOffset?), 9], [Property: User.NormalizedEmail (string) Index MaxLength(256), 10], [Property: User.NormalizedUserName (string) Index MaxLength(256), 11], [Property: User.PasswordHash (string), 12], [Property: User.PhoneNumber (string), 13], [Property: User.PhoneNumberConfirmed (bool) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UpdatedAt (DateTime) Required, 17], [Property: User.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.CreatedAt, a.Email, a.EmailConfirmed, a.IsDeleted, a.IsVerified, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UpdatedAt, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Persistance.EcommerceDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-04 14:57:51.941 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.942 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:51.943 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:57:51.944 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:57:51.945 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:57:51.946 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-10-04 14:57:52.533 +05:30  INF  Executed DbCommand (587ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-10-04 14:57:52.554 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:57:52.584 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:52.586 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 49ms reading results.
+2024-10-04 14:57:52.588 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:52.589 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (1ms).
+2024-10-04 14:57:52.592 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-10-04 14:57:52.595 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:57:52.596 +05:30  DBG  Disposed connection to database '' on server '' (1ms).
+2024-10-04 14:57:52.600 +05:30  DBG  Hosting starting
+2024-10-04 14:57:52.607 +05:30  DBG  Reading data from file 'C:\Users\arjun.hariprasad\AppData\Local\ASP.NET\DataProtection-Keys\key-36f6fa2d-df91-4e24-9271-a530e4737995.xml'.
+2024-10-04 14:57:52.625 +05:30  DBG  Found key {36f6fa2d-df91-4e24-9271-a530e4737995}.
+2024-10-04 14:57:52.640 +05:30  DBG  Considering key {36f6fa2d-df91-4e24-9271-a530e4737995} with expiration date 2024-10-20 08:26:28Z as default key.
+2024-10-04 14:57:52.645 +05:30  DBG  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-04 14:57:52.646 +05:30  DBG  Decrypting secret element using Windows DPAPI.
+2024-10-04 14:57:52.648 +05:30  DBG  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-04 14:57:52.650 +05:30  DBG  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-04 14:57:52.654 +05:30  DBG  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-04 14:57:52.658 +05:30  DBG  Using key {36f6fa2d-df91-4e24-9271-a530e4737995} as the default key.
+2024-10-04 14:57:52.659 +05:30  DBG  Key ring with default key {36f6fa2d-df91-4e24-9271-a530e4737995} was loaded during application startup.
+2024-10-04 14:57:52.888 +05:30  INF  Now listening on: https://localhost:7113
+2024-10-04 14:57:52.889 +05:30  INF  Now listening on: http://localhost:5081
+2024-10-04 14:57:52.890 +05:30  DBG  Loaded hosting startup assembly Web.Ecommerce
+2024-10-04 14:57:52.891 +05:30  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-04 14:57:52.891 +05:30  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-04 14:57:52.892 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-10-04 14:57:52.893 +05:30  INF  Hosting environment: Development
+2024-10-04 14:57:52.894 +05:30  INF  Content root path: C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Presentation\Web.Ecommerce
+2024-10-04 14:57:52.895 +05:30  DBG  Hosting started
+2024-10-04 14:57:53.092 +05:30  DBG  Connection id "0HN74AR995DLO" accepted.
+2024-10-04 14:57:53.094 +05:30  DBG  Connection id "0HN74AR995DLO" started.
+2024-10-04 14:57:53.117 +05:30  DBG  Connection id "0HN74AR995DLO" received FIN.
+2024-10-04 14:57:53.132 +05:30  DBG  Failed to authenticate HTTPS connection.System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2024-10-04 14:57:53.149 +05:30  DBG  Connection id "0HN74AR995DLO" stopped.
+2024-10-04 14:57:53.154 +05:30  DBG  Connection id "0HN74AR995DLO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 14:57:54.143 +05:30  DBG  Connection id "0HN74AR995DLP" accepted.
+2024-10-04 14:57:54.145 +05:30  DBG  Connection id "0HN74AR995DLP" started.
+2024-10-04 14:57:54.215 +05:30  DBG  Connection 0HN74AR995DLP established using the following protocol: "Tls12"
+2024-10-04 14:57:54.247 +05:30  VRB  Connection id "0HN74AR995DLP" sending "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:57:54.253 +05:30  VRB  Connection id "0HN74AR995DLP" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:57:54.257 +05:30  VRB  Connection id "0HN74AR995DLP" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:57:54.259 +05:30  VRB  Connection id "0HN74AR995DLP" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:57:54.261 +05:30  VRB  Connection id "0HN74AR995DLP" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:57:54.262 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 1 with length 468 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.283 +05:30  VRB  Connection id "0HN74AR995DLP" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:57:54.323 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.html - null null
+2024-10-04 14:57:54.469 +05:30  DBG  Wildcard detected, all requests with hosts will be allowed.
+2024-10-04 14:57:54.470 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.491 +05:30  DBG  No candidates found for the request path '/swagger/index.html'
+2024-10-04 14:57:54.493 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:54.596 +05:30  DBG  Response markup is scheduled to include Browser Link script injection.
+2024-10-04 14:57:54.601 +05:30  DBG  Response markup is scheduled to include browser refresh script injection.
+2024-10-04 14:57:54.605 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 1 with length 66 and flags "END_HEADERS".
+2024-10-04 14:57:54.607 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 1 with length 698 and flags "NONE".
+2024-10-04 14:57:54.608 +05:30  DBG  Response markup was updated to include Browser Link script injection.
+2024-10-04 14:57:54.609 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 1 with length 438 and flags "NONE".
+2024-10-04 14:57:54.611 +05:30  DBG  Response markup was updated to include browser refresh script injection.
+2024-10-04 14:57:54.623 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM".
+2024-10-04 14:57:54.629 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 3 with length 152 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.629 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.html - 200 null text/html;charset=utf-8 327.8532ms
+2024-10-04 14:57:54.632 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 5 with length 51 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.632 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/swagger-ui.css - null null
+2024-10-04 14:57:54.638 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 7 with length 83 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.638 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.css - null null
+2024-10-04 14:57:54.640 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.641 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 9 with length 52 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.641 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/swagger-ui-standalone-preset.js - null null
+2024-10-04 14:57:54.643 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.644 +05:30  DBG  No candidates found for the request path '/swagger/swagger-ui.css'
+2024-10-04 14:57:54.645 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 11 with length 35 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.645 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 14:57:54.647 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.648 +05:30  DBG  No candidates found for the request path '/swagger/index.css'
+2024-10-04 14:57:54.649 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:54.651 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 13 with length 60 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.652 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.js - null null
+2024-10-04 14:57:54.658 +05:30  DBG  No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2024-10-04 14:57:54.660 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 15 with length 57 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.660 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/swagger-ui-bundle.js - null null
+2024-10-04 14:57:54.661 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:54.662 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:54.665 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 9 with length 60 and flags "END_HEADERS".
+2024-10-04 14:57:54.665 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/_vs/browserLink - null null
+2024-10-04 14:57:54.668 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.670 +05:30  VRB  Range header's value is empty.
+2024-10-04 14:57:54.670 +05:30  VRB  Range header's value is empty.
+2024-10-04 14:57:54.670 +05:30  VRB  Range header's value is empty.
+2024-10-04 14:57:54.671 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.673 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 9 with length 13762 and flags "NONE".
+2024-10-04 14:57:54.676 +05:30  DBG  No candidates found for the request path '/swagger/index.js'
+2024-10-04 14:57:54.677 +05:30  INF  The file /index.css was not modified
+2024-10-04 14:57:54.677 +05:30  INF  The file /swagger-ui.css was not modified
+2024-10-04 14:57:54.678 +05:30  INF  The file /swagger-ui-standalone-preset.js was not modified
+2024-10-04 14:57:54.679 +05:30  DBG  No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-10-04 14:57:54.689 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:54.689 +05:30  DBG  Handled. Status code: 304 File: /swagger-ui-standalone-preset.js
+2024-10-04 14:57:54.689 +05:30  DBG  Handled. Status code: 304 File: /index.css
+2024-10-04 14:57:54.691 +05:30  DBG  Handled. Status code: 304 File: /swagger-ui.css
+2024-10-04 14:57:54.691 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:54.692 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 46.6028ms
+2024-10-04 14:57:54.693 +05:30  VRB  Range header's value is empty.
+2024-10-04 14:57:54.694 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 52.5576ms
+2024-10-04 14:57:54.695 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.css - 304 null text/css 57.2139ms
+2024-10-04 14:57:54.696 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/swagger-ui.css - 304 null text/css 63.4901ms
+2024-10-04 14:57:54.697 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.js - 200 null application/javascript;charset=utf-8 45.8732ms
+2024-10-04 14:57:54.702 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 9 with length 0 and flags "END_STREAM".
+2024-10-04 14:57:54.708 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 7 with length 77 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:57:54.720 +05:30  INF  The file /swagger-ui-bundle.js was not modified
+2024-10-04 14:57:54.724 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 5 with length 34 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:57:54.725 +05:30  DBG  Handled. Status code: 304 File: /swagger-ui-bundle.js
+2024-10-04 14:57:54.727 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/swagger-ui-bundle.js - 304 null text/javascript 65.9566ms
+2024-10-04 14:57:54.729 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 3 with length 25 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:57:54.738 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 11 with length 41 and flags "END_HEADERS".
+2024-10-04 14:57:54.741 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 11 with length 3005 and flags "END_STREAM".
+2024-10-04 14:57:54.743 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 13 with length 25 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:57:54.759 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 15 with length 149 and flags "END_HEADERS".
+2024-10-04 14:57:54.767 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 9986 and flags "NONE".
+2024-10-04 14:57:54.773 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.777 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.779 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.785 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.789 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.793 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.796 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.806 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.809 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.812 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.814 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.824 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.827 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.830 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 10240 and flags "NONE".
+2024-10-04 14:57:54.836 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 160 and flags "NONE".
+2024-10-04 14:57:54.838 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/_vs/browserLink - 200 null text/javascript; charset=UTF-8 172.8158ms
+2024-10-04 14:57:54.840 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 15 with length 0 and flags "END_STREAM".
+2024-10-04 14:57:54.970 +05:30  VRB  Connection id "0HN74AR995DLP" received "HEADERS" frame for stream ID 17 with length 74 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:57:54.974 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - null null
+2024-10-04 14:57:54.976 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:57:54.977 +05:30  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 14:57:54.978 +05:30  DBG  Request did not match any endpoints
+2024-10-04 14:57:55.102 +05:30  VRB  Connection id "0HN74AR995DLP" sending "HEADERS" frame for stream ID 17 with length 35 and flags "END_HEADERS".
+2024-10-04 14:57:55.104 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 17 with length 16384 and flags "NONE".
+2024-10-04 14:57:55.105 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 17 with length 7374 and flags "NONE".
+2024-10-04 14:57:55.109 +05:30  VRB  Connection id "0HN74AR995DLP" sending "DATA" frame for stream ID 17 with length 0 and flags "END_STREAM".
+2024-10-04 14:57:55.109 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 134.7256ms
+2024-10-04 14:57:57.416 +05:30  DBG  Connection id "0HN74AR995DLP" received FIN.
+2024-10-04 14:57:57.417 +05:30  DBG  Connection id "0HN74AR995DLP" is closed. The last processed stream ID was 17.
+2024-10-04 14:57:57.418 +05:30  DBG  The connection queue processing loop for 0HN74AR995DLP completed.
+2024-10-04 14:57:57.419 +05:30  DBG  Connection id "0HN74AR995DLP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 14:57:57.433 +05:30  DBG  Connection id "0HN74AR995DLP" stopped.
+2024-10-04 14:58:19.864 +05:30  DBG  Connection id "0HN74AR995DLQ" accepted.
+2024-10-04 14:58:19.872 +05:30  DBG  Connection id "0HN74AR995DLQ" started.
+2024-10-04 14:58:19.878 +05:30  DBG  Connection 0HN74AR995DLQ established using the following protocol: "Tls12"
+2024-10-04 14:58:19.880 +05:30  VRB  Connection id "0HN74AR995DLQ" sending "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:58:19.883 +05:30  VRB  Connection id "0HN74AR995DLQ" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:58:19.889 +05:30  VRB  Connection id "0HN74AR995DLQ" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:58:19.891 +05:30  VRB  Connection id "0HN74AR995DLQ" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:58:19.892 +05:30  VRB  Connection id "0HN74AR995DLQ" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:58:19.893 +05:30  VRB  Connection id "0HN74AR995DLQ" received "HEADERS" frame for stream ID 1 with length 337 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:58:19.895 +05:30  VRB  Connection id "0HN74AR995DLQ" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:58:19.895 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7113/api/Account/Login - null null
+2024-10-04 14:58:19.900 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:58:19.902 +05:30  DBG  1 candidate(s) found for the request path '/api/Account/Login'
+2024-10-04 14:58:19.903 +05:30  DBG  Request matched endpoint '405 HTTP Method Not Supported'
+2024-10-04 14:58:19.905 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:58:19.905 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:58:19.906 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:58:19.907 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:58:19.908 +05:30  DBG  The request is a preflight request.
+2024-10-04 14:58:19.909 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7113/api/Account/Login - 204 null null 13.9601ms
+2024-10-04 14:58:19.910 +05:30  VRB  Connection id "0HN74AR995DLQ" sending "HEADERS" frame for stream ID 1 with length 122 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:58:19.918 +05:30  VRB  Connection id "0HN74AR995DLQ" received "HEADERS" frame for stream ID 3 with length 181 and flags "END_HEADERS, PRIORITY".
+2024-10-04 14:58:19.920 +05:30  VRB  Connection id "0HN74AR995DLQ" received "DATA" frame for stream ID 3 with length 69 and flags "END_STREAM".
+2024-10-04 14:58:19.920 +05:30  INF  Request starting HTTP/2 POST https://localhost:7113/api/Account/Login - application/json 69
+2024-10-04 14:58:19.924 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:58:19.926 +05:30  DBG  1 candidate(s) found for the request path '/api/Account/Login'
+2024-10-04 14:58:19.928 +05:30  DBG  Endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)' with route pattern 'api/Account/Login' is valid for the request path '/api/Account/Login'
+2024-10-04 14:58:19.929 +05:30  DBG  Request matched endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)'
+2024-10-04 14:58:19.930 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:58:19.931 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:58:19.931 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:58:19.932 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:58:20.003 +05:30  DBG  AuthenticationScheme: Bearer was not authenticated.
+2024-10-04 14:58:20.007 +05:30  INF  Executing endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)'
+2024-10-04 14:58:20.027 +05:30  INF  Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand) on controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce).
+2024-10-04 14:58:20.030 +05:30  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2024-10-04 14:58:20.031 +05:30  DBG  Execution plan of resource filters (in the following order): ["None"]
+2024-10-04 14:58:20.032 +05:30  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-04 14:58:20.034 +05:30  DBG  Execution plan of exception filters (in the following order): ["None"]
+2024-10-04 14:58:20.035 +05:30  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-04 14:58:20.038 +05:30  DBG  Executing controller factory for controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce)
+2024-10-04 14:58:20.039 +05:30  DBG  Executed controller factory for controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce)
+2024-10-04 14:58:20.055 +05:30  DBG  Attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand' ...
+2024-10-04 14:58:20.058 +05:30  DBG  Attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand' using the name '' in request data ...
+2024-10-04 14:58:20.061 +05:30  DBG  Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-04 14:58:20.085 +05:30  DBG  Connection id "0HN74AR995DLQ", Request id "0HN74AR995DLQ:00000003": started reading request body.
+2024-10-04 14:58:20.087 +05:30  DBG  Connection id "0HN74AR995DLQ", Request id "0HN74AR995DLQ:00000003": done reading request body.
+2024-10-04 14:58:20.097 +05:30  DBG  JSON input formatter succeeded, deserializing to type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'
+2024-10-04 14:58:20.099 +05:30  DBG  Done attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'.
+2024-10-04 14:58:20.100 +05:30  DBG  Done attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'.
+2024-10-04 14:58:20.101 +05:30  DBG  Attempting to validate the bound parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand' ...
+2024-10-04 14:58:20.110 +05:30  DBG  Done attempting to validate the bound parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'.
+2024-10-04 14:58:20.113 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:20.114 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:20.115 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:20.116 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:20.120 +05:30  INF  Executing action method Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce) - Validation state: "Valid"
+2024-10-04 14:58:20.121 +05:30  VRB  Executing action method Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce) with arguments (["Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand"])
+2024-10-04 14:58:20.169 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-04 14:58:20.173 +05:30  DBG  Creating DbConnection.
+2024-10-04 14:58:20.174 +05:30  DBG  Created DbConnection. (0ms).
+2024-10-04 14:58:20.174 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:20.175 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:20.176 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:58:20.177 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:58:20.178 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:58:20.179 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-10-04 14:58:20.185 +05:30  INF  Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-10-04 14:58:20.191 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:58:20.192 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:20.193 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-10-04 14:58:20.194 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:20.195 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-10-04 14:58:20.287 +05:30  DBG  Invalid password for user.
+2024-10-04 14:58:20.406 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:20.408 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:20.410 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:20.411 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:20.416 +05:30  INF  Executed action Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce) in 377.4263ms
+2024-10-04 14:58:20.418 +05:30  INF  Executed endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)'
+2024-10-04 14:58:20.422 +05:30  ERR  An unhandled exception has occurred while executing the request.System.UnauthorizedAccessException: Invalid email or password.
+   at Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\Authentication\Commands\LoginUser\LoginUserCommandHandler.cs:line 43
+   at Web.Ecommerce.Controllers.Account.AccountController.Login(LoginUserCommand command) in C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Presentation\Web.Ecommerce\Controllers\Account\AccountController.cs:line 147
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-10-04 14:58:20.459 +05:30  VRB  Connection id "0HN74AR995DLQ" sending "HEADERS" frame for stream ID 3 with length 61 and flags "END_HEADERS".
+2024-10-04 14:58:20.460 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-10-04 14:58:20.461 +05:30  VRB  Connection id "0HN74AR995DLQ" sending "DATA" frame for stream ID 3 with length 3428 and flags "END_STREAM".
+2024-10-04 14:58:20.464 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:20.466 +05:30  DBG  Disposed connection to database '' on server '' (1ms).
+2024-10-04 14:58:20.468 +05:30  INF  Request finished HTTP/2 POST https://localhost:7113/api/Account/Login - 500 null text/plain; charset=utf-8 547.9455ms
+2024-10-04 14:58:27.450 +05:30  DBG  Connection id "0HN74AR995DLQ" received FIN.
+2024-10-04 14:58:27.453 +05:30  DBG  Connection id "0HN74AR995DLQ" is closed. The last processed stream ID was 3.
+2024-10-04 14:58:27.453 +05:30  DBG  The connection queue processing loop for 0HN74AR995DLQ completed.
+2024-10-04 14:58:27.454 +05:30  DBG  Connection id "0HN74AR995DLQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 14:58:27.463 +05:30  DBG  Connection id "0HN74AR995DLQ" stopped.
+2024-10-04 14:58:47.602 +05:30  DBG  Connection id "0HN74AR995DLR" accepted.
+2024-10-04 14:58:47.603 +05:30  DBG  Connection id "0HN74AR995DLR" started.
+2024-10-04 14:58:47.606 +05:30  DBG  Connection 0HN74AR995DLR established using the following protocol: "Tls12"
+2024-10-04 14:58:47.607 +05:30  VRB  Connection id "0HN74AR995DLR" sending "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:58:47.609 +05:30  VRB  Connection id "0HN74AR995DLR" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:58:47.610 +05:30  VRB  Connection id "0HN74AR995DLR" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:58:47.612 +05:30  VRB  Connection id "0HN74AR995DLR" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:58:47.613 +05:30  VRB  Connection id "0HN74AR995DLR" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:58:47.615 +05:30  VRB  Connection id "0HN74AR995DLR" received "HEADERS" frame for stream ID 1 with length 337 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:58:47.617 +05:30  VRB  Connection id "0HN74AR995DLR" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:58:47.617 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7113/api/Account/Login - null null
+2024-10-04 14:58:47.622 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:58:47.622 +05:30  DBG  1 candidate(s) found for the request path '/api/Account/Login'
+2024-10-04 14:58:47.623 +05:30  DBG  Request matched endpoint '405 HTTP Method Not Supported'
+2024-10-04 14:58:47.624 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:58:47.624 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:58:47.625 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:58:47.626 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:58:47.626 +05:30  DBG  The request is a preflight request.
+2024-10-04 14:58:47.627 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7113/api/Account/Login - 204 null null 9.6677ms
+2024-10-04 14:58:47.627 +05:30  VRB  Connection id "0HN74AR995DLR" sending "HEADERS" frame for stream ID 1 with length 122 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:58:47.633 +05:30  VRB  Connection id "0HN74AR995DLR" received "HEADERS" frame for stream ID 3 with length 181 and flags "END_HEADERS, PRIORITY".
+2024-10-04 14:58:47.637 +05:30  VRB  Connection id "0HN74AR995DLR" received "DATA" frame for stream ID 3 with length 68 and flags "END_STREAM".
+2024-10-04 14:58:47.637 +05:30  INF  Request starting HTTP/2 POST https://localhost:7113/api/Account/Login - application/json 68
+2024-10-04 14:58:47.641 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:58:47.641 +05:30  DBG  1 candidate(s) found for the request path '/api/Account/Login'
+2024-10-04 14:58:47.642 +05:30  DBG  Endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)' with route pattern 'api/Account/Login' is valid for the request path '/api/Account/Login'
+2024-10-04 14:58:47.643 +05:30  DBG  Request matched endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)'
+2024-10-04 14:58:47.644 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:58:47.645 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:58:47.645 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:58:47.646 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:58:47.647 +05:30  DBG  AuthenticationScheme: Bearer was not authenticated.
+2024-10-04 14:58:47.648 +05:30  INF  Executing endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)'
+2024-10-04 14:58:47.650 +05:30  INF  Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand) on controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce).
+2024-10-04 14:58:47.652 +05:30  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2024-10-04 14:58:47.654 +05:30  DBG  Execution plan of resource filters (in the following order): ["None"]
+2024-10-04 14:58:47.656 +05:30  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-04 14:58:47.657 +05:30  DBG  Execution plan of exception filters (in the following order): ["None"]
+2024-10-04 14:58:47.658 +05:30  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-04 14:58:47.660 +05:30  DBG  Executing controller factory for controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce)
+2024-10-04 14:58:47.661 +05:30  DBG  Executed controller factory for controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce)
+2024-10-04 14:58:47.662 +05:30  DBG  Attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand' ...
+2024-10-04 14:58:47.663 +05:30  DBG  Attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand' using the name '' in request data ...
+2024-10-04 14:58:47.664 +05:30  DBG  Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-10-04 14:58:47.665 +05:30  DBG  Connection id "0HN74AR995DLR", Request id "0HN74AR995DLR:00000003": started reading request body.
+2024-10-04 14:58:47.667 +05:30  DBG  Connection id "0HN74AR995DLR", Request id "0HN74AR995DLR:00000003": done reading request body.
+2024-10-04 14:58:47.669 +05:30  DBG  JSON input formatter succeeded, deserializing to type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'
+2024-10-04 14:58:47.670 +05:30  DBG  Done attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'.
+2024-10-04 14:58:47.671 +05:30  DBG  Done attempting to bind parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'.
+2024-10-04 14:58:47.672 +05:30  DBG  Attempting to validate the bound parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand' ...
+2024-10-04 14:58:47.673 +05:30  DBG  Done attempting to validate the bound parameter 'command' of type 'Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand'.
+2024-10-04 14:58:47.674 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:47.675 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:47.676 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:47.678 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:47.679 +05:30  INF  Executing action method Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce) - Validation state: "Valid"
+2024-10-04 14:58:47.680 +05:30  VRB  Executing action method Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce) with arguments (["Application.Ecom.Authentication.Commands.LoginUser.LoginUserCommand"])
+2024-10-04 14:58:47.690 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-04 14:58:47.693 +05:30  DBG  Creating DbConnection.
+2024-10-04 14:58:47.694 +05:30  DBG  Created DbConnection. (0ms).
+2024-10-04 14:58:47.694 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.695 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.696 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:58:47.697 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:58:47.698 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:58:47.699 +05:30  DBG  Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-10-04 14:58:47.704 +05:30  INF  Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-10-04 14:58:47.707 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:58:47.708 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.709 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-10-04 14:58:47.710 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.711 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-10-04 14:58:47.793 +05:30  DBG  Compiling query expression: 
+'DbSet<IdentityUserRole<Guid>>()
+    .Join(
+        inner: DbSet<IdentityRole<Guid>>(), 
+        outerKeySelector: userRole => userRole.RoleId, 
+        innerKeySelector: role => role.Id, 
+        resultSelector: (userRole, role) => new { 
+            userRole = userRole, 
+            role = role
+         })
+    .Where(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.userRole.UserId.Equals(__userId_0))
+    .Select(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.role.Name)'
+2024-10-04 14:58:47.826 +05:30  DBG  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<string>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT a0.Name
+        FROM AspNetUserRoles AS a
+        INNER JOIN AspNetRoles AS a0 ON a.RoleId == a0.Id
+        WHERE a.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, string>, 
+    Persistance.EcommerceDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-04 14:58:47.831 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.832 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.833 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:58:47.834 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:58:47.835 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:58:47.836 +05:30  DBG  Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-10-04 14:58:47.847 +05:30  INF  Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-10-04 14:58:47.850 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.851 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 1ms reading results.
+2024-10-04 14:58:47.852 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.853 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-10-04 14:58:47.888 +05:30  INF  Executed action method Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 204.741ms.
+2024-10-04 14:58:47.890 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:47.892 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:47.893 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:47.894 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:47.895 +05:30  VRB  Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:47.896 +05:30  VRB  Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:47.898 +05:30  VRB  Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:58:47.900 +05:30  DBG  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-04 14:58:47.903 +05:30  DBG  No information found on request to perform content negotiation.
+2024-10-04 14:58:47.903 +05:30  DBG  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-04 14:58:47.904 +05:30  DBG  Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-04 14:58:47.906 +05:30  DBG  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-04 14:58:47.907 +05:30  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-10-04 14:58:47.923 +05:30  VRB  Connection id "0HN74AR995DLR" sending "HEADERS" frame for stream ID 3 with length 37 and flags "END_HEADERS".
+2024-10-04 14:58:47.923 +05:30  VRB  After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:58:47.926 +05:30  VRB  Connection id "0HN74AR995DLR" sending "DATA" frame for stream ID 3 with length 582 and flags "NONE".
+2024-10-04 14:58:47.927 +05:30  VRB  Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:47.930 +05:30  VRB  Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:47.932 +05:30  INF  Executed action Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce) in 271.9012ms
+2024-10-04 14:58:47.933 +05:30  INF  Executed endpoint 'Web.Ecommerce.Controllers.Account.AccountController.Login (Web.Ecommerce)'
+2024-10-04 14:58:47.934 +05:30  VRB  Connection id "0HN74AR995DLR" sending "DATA" frame for stream ID 3 with length 0 and flags "END_STREAM".
+2024-10-04 14:58:47.934 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-10-04 14:58:47.938 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:47.940 +05:30  DBG  Disposed connection to database '' on server '' (2ms).
+2024-10-04 14:58:47.941 +05:30  INF  Request finished HTTP/2 POST https://localhost:7113/api/Account/Login - 200 null application/json; charset=utf-8 304.0328ms
+2024-10-04 14:58:52.487 +05:30  DBG  Connection id "0HN74AR995DLR" received FIN.
+2024-10-04 14:58:52.488 +05:30  DBG  Connection id "0HN74AR995DLR" is closed. The last processed stream ID was 3.
+2024-10-04 14:58:52.488 +05:30  DBG  The connection queue processing loop for 0HN74AR995DLR completed.
+2024-10-04 14:58:52.490 +05:30  DBG  Connection id "0HN74AR995DLR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 14:58:52.501 +05:30  DBG  Connection id "0HN74AR995DLR" stopped.
+2024-10-04 14:58:54.529 +05:30  DBG  Connection id "0HN74AR995DLS" accepted.
+2024-10-04 14:58:54.531 +05:30  DBG  Connection id "0HN74AR995DLS" started.
+2024-10-04 14:58:54.548 +05:30  DBG  Connection 0HN74AR995DLS established using the following protocol: "Tls12"
+2024-10-04 14:58:54.559 +05:30  VRB  Connection id "0HN74AR995DLS" sending "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:58:54.560 +05:30  VRB  Connection id "0HN74AR995DLS" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:58:54.562 +05:30  VRB  Connection id "0HN74AR995DLS" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:58:54.564 +05:30  VRB  Connection id "0HN74AR995DLS" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:58:54.570 +05:30  VRB  Connection id "0HN74AR995DLS" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:58:54.573 +05:30  VRB  Connection id "0HN74AR995DLS" received "HEADERS" frame for stream ID 1 with length 343 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:58:54.575 +05:30  VRB  Connection id "0HN74AR995DLS" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:58:54.575 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7113/api/Product/GetAllProducts - null null
+2024-10-04 14:58:54.579 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:58:54.580 +05:30  DBG  1 candidate(s) found for the request path '/api/Product/GetAllProducts'
+2024-10-04 14:58:54.580 +05:30  DBG  Request matched endpoint '405 HTTP Method Not Supported'
+2024-10-04 14:58:54.581 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:58:54.582 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:58:54.584 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:58:54.585 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:58:54.585 +05:30  DBG  The request is a preflight request.
+2024-10-04 14:58:54.586 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7113/api/Product/GetAllProducts - 204 null null 10.5834ms
+2024-10-04 14:58:54.586 +05:30  VRB  Connection id "0HN74AR995DLS" sending "HEADERS" frame for stream ID 1 with length 122 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:58:54.598 +05:30  VRB  Connection id "0HN74AR995DLS" received "HEADERS" frame for stream ID 3 with length 393 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:58:54.602 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/api/Product/GetAllProducts - null null
+2024-10-04 14:58:54.604 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:58:54.606 +05:30  DBG  1 candidate(s) found for the request path '/api/Product/GetAllProducts'
+2024-10-04 14:58:54.608 +05:30  DBG  Endpoint 'Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce)' with route pattern 'api/Product/GetAllProducts' is valid for the request path '/api/Product/GetAllProducts'
+2024-10-04 14:58:54.609 +05:30  DBG  Request matched endpoint 'Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce)'
+2024-10-04 14:58:54.610 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:58:54.611 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:58:54.611 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:58:54.612 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:58:54.652 +05:30  DBG  Successfully validated the token.
+2024-10-04 14:58:54.656 +05:30  DBG  AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-04 14:58:54.659 +05:30  DBG  AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-04 14:58:54.660 +05:30  INF  Executing endpoint 'Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce)'
+2024-10-04 14:58:54.665 +05:30  INF  Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller Web.Ecommerce.Controllers.Seller.ProductController (Web.Ecommerce).
+2024-10-04 14:58:54.667 +05:30  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2024-10-04 14:58:54.668 +05:30  DBG  Execution plan of resource filters (in the following order): ["None"]
+2024-10-04 14:58:54.669 +05:30  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-04 14:58:54.671 +05:30  DBG  Execution plan of exception filters (in the following order): ["None"]
+2024-10-04 14:58:54.672 +05:30  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-04 14:58:54.673 +05:30  DBG  Executing controller factory for controller Web.Ecommerce.Controllers.Seller.ProductController (Web.Ecommerce)
+2024-10-04 14:58:54.675 +05:30  DBG  Executed controller factory for controller Web.Ecommerce.Controllers.Seller.ProductController (Web.Ecommerce)
+2024-10-04 14:58:54.676 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:54.677 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:54.679 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:54.680 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:54.682 +05:30  INF  Executing action method Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce) - Validation state: "Valid"
+2024-10-04 14:58:54.687 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-04 14:58:54.691 +05:30  DBG  Compiling query expression: 
+'DbSet<Product>()
+    .Select(p => new ProductDto{ 
+        ProductId = p.ProductId, 
+        Name = p.Name, 
+        Description = p.Description, 
+        Category = p.Category, 
+        Price = p.Price, 
+        Quantity = p.Quantity, 
+        ImageUrl = p.Imageurl, 
+        SellerId = p.SellerId, 
+        SellerName = p.Seller.StoreName 
+    }
+    )
+    .Count()'
+2024-10-04 14:58:54.723 +05:30  DBG  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Products AS p), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        Persistance.EcommerceDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-10-04 14:58:54.732 +05:30  DBG  Creating DbConnection.
+2024-10-04 14:58:54.733 +05:30  DBG  Created DbConnection. (1ms).
+2024-10-04 14:58:54.734 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.735 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.736 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:58:54.737 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:58:54.738 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:58:54.739 +05:30  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-10-04 14:58:54.749 +05:30  INF  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-10-04 14:58:54.752 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.753 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 1ms reading results.
+2024-10-04 14:58:54.754 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.755 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-10-04 14:58:54.757 +05:30  DBG  Compiling query expression: 
+'DbSet<Product>()
+    .Select(p => new ProductDto{ 
+        ProductId = p.ProductId, 
+        Name = p.Name, 
+        Description = p.Description, 
+        Category = p.Category, 
+        Price = p.Price, 
+        Quantity = p.Quantity, 
+        ImageUrl = p.Imageurl, 
+        SellerId = p.SellerId, 
+        SellerName = p.Seller.StoreName 
+    }
+    )
+    .Skip(__p_0)
+    .Take(__p_1)'
+2024-10-04 14:58:54.765 +05:30  WRN  The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-04 14:58:54.767 +05:30  WRN  The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-04 14:58:54.778 +05:30  DBG  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ProductDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            ProductId -> 0
+            Name -> 1
+            Description -> 2
+            Category -> 3
+            Price -> 4
+            Quantity -> 5
+            ImageUrl -> 6
+            SellerId -> 7
+            SellerName -> 8
+        SELECT t.ProductId, t.Name, t.Description, t.Category, t.Price, t.Quantity, t.Imageurl AS ImageUrl, t.SellerId, s.StoreName AS SellerName
+        FROM 
+        (
+            SELECT p.ProductId, p.Category, p.Description, p.Imageurl, p.Name, p.Price, p.Quantity, p.SellerId
+            FROM Products AS p
+            OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+        ) AS t
+        INNER JOIN Sellers AS s ON t.SellerId == s.SellerId), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ProductDto>, 
+    Persistance.EcommerceDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-04 14:58:54.785 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.786 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.787 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:58:54.788 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:58:54.789 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:58:54.790 +05:30  DBG  Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[ProductId], [t].[Name], [t].[Description], [t].[Category], [t].[Price], [t].[Quantity], [t].[Imageurl] AS [ImageUrl], [t].[SellerId], [s].[StoreName] AS [SellerName]
+FROM (
+    SELECT [p].[ProductId], [p].[Category], [p].[Description], [p].[Imageurl], [p].[Name], [p].[Price], [p].[Quantity], [p].[SellerId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Sellers] AS [s] ON [t].[SellerId] = [s].[SellerId]
+2024-10-04 14:58:54.803 +05:30  INF  Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[ProductId], [t].[Name], [t].[Description], [t].[Category], [t].[Price], [t].[Quantity], [t].[Imageurl] AS [ImageUrl], [t].[SellerId], [s].[StoreName] AS [SellerName]
+FROM (
+    SELECT [p].[ProductId], [p].[Category], [p].[Description], [p].[Imageurl], [p].[Name], [p].[Price], [p].[Quantity], [p].[SellerId]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Sellers] AS [s] ON [t].[SellerId] = [s].[SellerId]
+2024-10-04 14:58:54.808 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.808 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 2ms reading results.
+2024-10-04 14:58:54.810 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.811 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-10-04 14:58:54.813 +05:30  INF  Executed action method Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 129.9736ms.
+2024-10-04 14:58:54.814 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:54.815 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:58:54.817 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:54.818 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:58:54.819 +05:30  VRB  Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:54.820 +05:30  VRB  Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:54.821 +05:30  VRB  Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:58:54.822 +05:30  DBG  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-04 14:58:54.824 +05:30  DBG  No information found on request to perform content negotiation.
+2024-10-04 14:58:54.824 +05:30  DBG  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-04 14:58:54.825 +05:30  DBG  Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-04 14:58:54.826 +05:30  DBG  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-04 14:58:54.827 +05:30  INF  Executing OkObjectResult, writing value of type 'Application.Ecom.ProductOperations.Queries.GetAllProducts.PaginatedProductResponse'.
+2024-10-04 14:58:54.839 +05:30  VRB  After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:58:54.839 +05:30  VRB  Connection id "0HN74AR995DLS" sending "HEADERS" frame for stream ID 3 with length 37 and flags "END_HEADERS".
+2024-10-04 14:58:54.840 +05:30  VRB  Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:54.842 +05:30  VRB  Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:58:54.844 +05:30  VRB  Connection id "0HN74AR995DLS" sending "DATA" frame for stream ID 3 with length 2019 and flags "NONE".
+2024-10-04 14:58:54.845 +05:30  INF  Executed action Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce) in 171.5601ms
+2024-10-04 14:58:54.847 +05:30  INF  Executed endpoint 'Web.Ecommerce.Controllers.Seller.ProductController.GetAllProducts (Web.Ecommerce)'
+2024-10-04 14:58:54.848 +05:30  VRB  Connection id "0HN74AR995DLS" sending "DATA" frame for stream ID 3 with length 0 and flags "END_STREAM".
+2024-10-04 14:58:54.848 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-10-04 14:58:54.851 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:58:54.853 +05:30  DBG  Disposed connection to database '' on server '' (1ms).
+2024-10-04 14:58:54.854 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/api/Product/GetAllProducts - 200 null application/json; charset=utf-8 251.8145ms
+2024-10-04 14:58:57.487 +05:30  DBG  Connection id "0HN74AR995DLS" received FIN.
+2024-10-04 14:58:57.488 +05:30  DBG  Connection id "0HN74AR995DLS" is closed. The last processed stream ID was 3.
+2024-10-04 14:58:57.488 +05:30  DBG  The connection queue processing loop for 0HN74AR995DLS completed.
+2024-10-04 14:58:57.489 +05:30  DBG  Connection id "0HN74AR995DLS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 14:58:57.499 +05:30  DBG  Connection id "0HN74AR995DLS" stopped.
+2024-10-04 14:59:12.368 +05:30  DBG  Connection id "0HN74AR995DLT" accepted.
+2024-10-04 14:59:12.370 +05:30  DBG  Connection id "0HN74AR995DLT" started.
+2024-10-04 14:59:12.373 +05:30  DBG  Connection 0HN74AR995DLT established using the following protocol: "Tls12"
+2024-10-04 14:59:12.374 +05:30  VRB  Connection id "0HN74AR995DLT" sending "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:59:12.376 +05:30  VRB  Connection id "0HN74AR995DLT" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:59:12.377 +05:30  VRB  Connection id "0HN74AR995DLT" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE".
+2024-10-04 14:59:12.379 +05:30  VRB  Connection id "0HN74AR995DLT" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:59:12.380 +05:30  VRB  Connection id "0HN74AR995DLT" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0.
+2024-10-04 14:59:12.382 +05:30  VRB  Connection id "0HN74AR995DLT" received "HEADERS" frame for stream ID 1 with length 341 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:59:12.385 +05:30  VRB  Connection id "0HN74AR995DLT" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK".
+2024-10-04 14:59:12.385 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7113/api/Account/ViewAllUsers - null null
+2024-10-04 14:59:12.389 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:59:12.389 +05:30  DBG  1 candidate(s) found for the request path '/api/Account/ViewAllUsers'
+2024-10-04 14:59:12.390 +05:30  DBG  Request matched endpoint '405 HTTP Method Not Supported'
+2024-10-04 14:59:12.391 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:59:12.391 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:59:12.392 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:59:12.392 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:59:12.393 +05:30  DBG  The request is a preflight request.
+2024-10-04 14:59:12.394 +05:30  VRB  Connection id "0HN74AR995DLT" sending "HEADERS" frame for stream ID 1 with length 122 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:59:12.394 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7113/api/Account/ViewAllUsers - 204 null null 8.7482ms
+2024-10-04 14:59:12.397 +05:30  VRB  Connection id "0HN74AR995DLT" received "HEADERS" frame for stream ID 3 with length 391 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:59:12.403 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/api/Account/ViewAllUsers - null null
+2024-10-04 14:59:12.405 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:59:12.405 +05:30  DBG  1 candidate(s) found for the request path '/api/Account/ViewAllUsers'
+2024-10-04 14:59:12.406 +05:30  DBG  Endpoint 'Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce)' with route pattern 'api/Account/ViewAllUsers' is valid for the request path '/api/Account/ViewAllUsers'
+2024-10-04 14:59:12.407 +05:30  DBG  Request matched endpoint 'Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce)'
+2024-10-04 14:59:12.408 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:59:12.409 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:59:12.409 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:59:12.410 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:59:12.411 +05:30  DBG  Successfully validated the token.
+2024-10-04 14:59:12.411 +05:30  DBG  AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-04 14:59:12.416 +05:30  DBG  Authorization was successful.
+2024-10-04 14:59:12.419 +05:30  INF  Executing endpoint 'Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce)'
+2024-10-04 14:59:12.424 +05:30  INF  Route matched with {action = "ViewAllUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllUsers() on controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce).
+2024-10-04 14:59:12.426 +05:30  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2024-10-04 14:59:12.427 +05:30  DBG  Execution plan of resource filters (in the following order): ["None"]
+2024-10-04 14:59:12.428 +05:30  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-04 14:59:12.429 +05:30  DBG  Execution plan of exception filters (in the following order): ["None"]
+2024-10-04 14:59:12.430 +05:30  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-04 14:59:12.431 +05:30  DBG  Executing controller factory for controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce)
+2024-10-04 14:59:12.434 +05:30  DBG  Executed controller factory for controller Web.Ecommerce.Controllers.Account.AccountController (Web.Ecommerce)
+2024-10-04 14:59:12.435 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:12.437 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:12.438 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:12.439 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:12.440 +05:30  INF  Executing action method Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce) - Validation state: "Valid"
+2024-10-04 14:59:12.444 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-04 14:59:12.447 +05:30  DBG  Compiling query expression: 
+'DbSet<User>()
+    .Where(user => !(user.IsDeleted))'
+2024-10-04 14:59:12.453 +05:30  DBG  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.CreatedAt (DateTime) Required, 3], [Property: User.Email (string) MaxLength(256), 4], [Property: User.EmailConfirmed (bool) Required, 5], [Property: User.IsDeleted (bool) Required, 6], [Property: User.IsVerified (bool) Required, 7], [Property: User.LockoutEnabled (bool) Required, 8], [Property: User.LockoutEnd (DateTimeOffset?), 9], [Property: User.NormalizedEmail (string) Index MaxLength(256), 10], [Property: User.NormalizedUserName (string) Index MaxLength(256), 11], [Property: User.PasswordHash (string), 12], [Property: User.PhoneNumber (string), 13], [Property: User.PhoneNumberConfirmed (bool) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UpdatedAt (DateTime) Required, 17], [Property: User.UserName (string) MaxLength(256), 18] }
+        SELECT a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.CreatedAt, a.Email, a.EmailConfirmed, a.IsDeleted, a.IsVerified, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UpdatedAt, a.UserName
+        FROM AspNetUsers AS a
+        WHERE Not(a.IsDeleted)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    Persistance.EcommerceDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-04 14:59:12.458 +05:30  DBG  Creating DbConnection.
+2024-10-04 14:59:12.459 +05:30  DBG  Created DbConnection. (0ms).
+2024-10-04 14:59:12.459 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:12.460 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:12.461 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:59:12.462 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:59:12.463 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:59:12.464 +05:30  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit)
+2024-10-04 14:59:12.470 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsVerified], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedAt], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit)
+2024-10-04 14:59:12.472 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:59:12.473 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:59:12.474 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:59:12.475 +05:30  DBG  Context 'EcommerceDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-04 14:59:12.476 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:12.477 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 5ms reading results.
+2024-10-04 14:59:12.478 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:12.479 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (0ms).
+2024-10-04 14:59:12.480 +05:30  INF  Executed action method Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.2849ms.
+2024-10-04 14:59:12.482 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:12.483 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:12.485 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:12.486 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:12.487 +05:30  VRB  Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:12.488 +05:30  VRB  Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:12.490 +05:30  VRB  Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:59:12.491 +05:30  DBG  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-04 14:59:12.493 +05:30  DBG  No information found on request to perform content negotiation.
+2024-10-04 14:59:12.494 +05:30  DBG  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-04 14:59:12.495 +05:30  DBG  Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-04 14:59:12.496 +05:30  DBG  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-04 14:59:12.497 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.Models.Entities.User, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 14:59:12.524 +05:30  VRB  After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:59:12.524 +05:30  VRB  Connection id "0HN74AR995DLT" sending "HEADERS" frame for stream ID 3 with length 37 and flags "END_HEADERS".
+2024-10-04 14:59:12.526 +05:30  VRB  Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:12.527 +05:30  VRB  Connection id "0HN74AR995DLT" sending "DATA" frame for stream ID 3 with length 2807 and flags "NONE".
+2024-10-04 14:59:12.529 +05:30  VRB  Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:12.532 +05:30  INF  Executed action Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce) in 100.0884ms
+2024-10-04 14:59:12.533 +05:30  INF  Executed endpoint 'Web.Ecommerce.Controllers.Account.AccountController.ViewAllUsers (Web.Ecommerce)'
+2024-10-04 14:59:12.534 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-10-04 14:59:12.534 +05:30  VRB  Connection id "0HN74AR995DLT" sending "DATA" frame for stream ID 3 with length 0 and flags "END_STREAM".
+2024-10-04 14:59:12.534 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:12.536 +05:30  DBG  Disposed connection to database '' on server '' (1ms).
+2024-10-04 14:59:12.539 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/api/Account/ViewAllUsers - 200 null application/json; charset=utf-8 135.9838ms
+2024-10-04 14:59:13.565 +05:30  VRB  Connection id "0HN74AR995DLT" received "HEADERS" frame for stream ID 5 with length 47 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:59:13.571 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7113/api/Order/GetAllOrders - null null
+2024-10-04 14:59:13.574 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:59:13.574 +05:30  DBG  1 candidate(s) found for the request path '/api/Order/GetAllOrders'
+2024-10-04 14:59:13.575 +05:30  DBG  Request matched endpoint '405 HTTP Method Not Supported'
+2024-10-04 14:59:13.576 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:59:13.577 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:59:13.577 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:59:13.578 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:59:13.579 +05:30  DBG  The request is a preflight request.
+2024-10-04 14:59:13.580 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7113/api/Order/GetAllOrders - 204 null null 9.1233ms
+2024-10-04 14:59:13.580 +05:30  VRB  Connection id "0HN74AR995DLT" sending "HEADERS" frame for stream ID 5 with length 36 and flags "END_STREAM, END_HEADERS".
+2024-10-04 14:59:13.588 +05:30  VRB  Connection id "0HN74AR995DLT" received "HEADERS" frame for stream ID 7 with length 41 and flags "END_STREAM, END_HEADERS, PRIORITY".
+2024-10-04 14:59:13.590 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/api/Order/GetAllOrders - null null
+2024-10-04 14:59:13.593 +05:30  VRB  All hosts are allowed.
+2024-10-04 14:59:13.594 +05:30  DBG  1 candidate(s) found for the request path '/api/Order/GetAllOrders'
+2024-10-04 14:59:13.596 +05:30  DBG  Endpoint 'Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce)' with route pattern 'api/Order/GetAllOrders' is valid for the request path '/api/Order/GetAllOrders'
+2024-10-04 14:59:13.597 +05:30  DBG  Request matched endpoint 'Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce)'
+2024-10-04 14:59:13.598 +05:30  VRB  The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-10-04 14:59:13.599 +05:30  DBG  Static files was skipped as the request already matched an endpoint.
+2024-10-04 14:59:13.600 +05:30  DBG  The request has an origin header: 'http://localhost:53957'.
+2024-10-04 14:59:13.601 +05:30  INF  CORS policy execution successful.
+2024-10-04 14:59:13.602 +05:30  DBG  Successfully validated the token.
+2024-10-04 14:59:13.602 +05:30  DBG  AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-04 14:59:13.604 +05:30  DBG  AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-04 14:59:13.605 +05:30  INF  Executing endpoint 'Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce)'
+2024-10-04 14:59:13.608 +05:30  INF  Route matched with {action = "GetAllOrdersQuery", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersQuery() on controller Web.Ecommerce.Controllers.Customer.OrderController (Web.Ecommerce).
+2024-10-04 14:59:13.609 +05:30  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2024-10-04 14:59:13.610 +05:30  DBG  Execution plan of resource filters (in the following order): ["None"]
+2024-10-04 14:59:13.612 +05:30  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-04 14:59:13.613 +05:30  DBG  Execution plan of exception filters (in the following order): ["None"]
+2024-10-04 14:59:13.614 +05:30  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-04 14:59:13.615 +05:30  DBG  Executing controller factory for controller Web.Ecommerce.Controllers.Customer.OrderController (Web.Ecommerce)
+2024-10-04 14:59:13.618 +05:30  DBG  Executed controller factory for controller Web.Ecommerce.Controllers.Customer.OrderController (Web.Ecommerce)
+2024-10-04 14:59:13.620 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:13.621 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:13.622 +05:30  VRB  Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:13.623 +05:30  VRB  Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:13.624 +05:30  INF  Executing action method Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce) - Validation state: "Valid"
+2024-10-04 14:59:13.630 +05:30  DBG  Entity Framework Core 8.0.8 initialized 'EcommerceDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-04 14:59:13.636 +05:30  DBG  Compiling query expression: 
+'DbSet<Order>()
+    .Where(o => !(o.IsCancelled))
+    .Include(o => o.Customer)
+    .Include(o => o.OrderItems)
+    .ThenInclude(oi => oi.Product)
+    .Select(o => new OrderDto{ 
+        OrderId = o.OrderId, 
+        CustomerName = o.Customer.UserName, 
+        OrderDate = o.OrderDate, 
+        TotalAmount = o.TotalAmount, 
+        IsPaid = o.IsPaid, 
+        OrderStatus = o.OrderStatus, 
+        IsDelivered = o.IsDelivered, 
+        ShippingAddress = o.ShippingAddress, 
+        OrderItems = o.OrderItems
+            .Select(oi => new OrderItemDto{ 
+                ProductId = oi.ProductId, 
+                ProductName = oi.Product.Name, 
+                Quantity = oi.Quantity 
+            }
+            )
+            .ToList() 
+    }
+    )'
+2024-10-04 14:59:13.669 +05:30  DBG  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<OrderDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+            2 -> 2
+            3 -> 3
+            4 -> 4
+            5 -> 5
+            6 -> 6
+            7 -> 7
+            8 -> 8
+            9 -> 9
+            10 -> 10
+            11 -> 11
+            12 -> 12
+            13 -> 13
+        SELECT o.OrderId, a.UserName, o.OrderDate, o.TotalAmount, o.IsPaid, o.OrderStatus, o.IsDelivered, o.ShippingAddress, a.Id, t.ProductId, t.ProductName, t.Quantity, t.OrderItemId, t.ProductId0
+        FROM Orders AS o
+        INNER JOIN AspNetUsers AS a ON o.CustomerId == a.Id
+        LEFT JOIN 
+        (
+            SELECT o0.ProductId, p.Name AS ProductName, o0.Quantity, o0.OrderItemId, p.ProductId AS ProductId0, o0.OrderId
+            FROM OrderItems AS o0
+            INNER JOIN Products AS p ON o0.ProductId == p.ProductId
+        ) AS t ON o.OrderId == t.OrderId
+        WHERE Not(o.IsCancelled)
+        ORDER BY o.OrderId ASC, a.Id ASC, t.OrderItemId ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, OrderDto>, 
+    Persistance.EcommerceDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-04 14:59:13.676 +05:30  DBG  Creating DbConnection.
+2024-10-04 14:59:13.677 +05:30  DBG  Created DbConnection. (0ms).
+2024-10-04 14:59:13.678 +05:30  DBG  Opening connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:13.679 +05:30  DBG  Opened connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:13.680 +05:30  DBG  Creating DbCommand for 'ExecuteReader'.
+2024-10-04 14:59:13.680 +05:30  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2024-10-04 14:59:13.681 +05:30  DBG  Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-10-04 14:59:13.683 +05:30  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderId], [a].[UserName], [o].[OrderDate], [o].[TotalAmount], [o].[IsPaid], [o].[OrderStatus], [o].[IsDelivered], [o].[ShippingAddress], [a].[Id], [t].[ProductId], [t].[ProductName], [t].[Quantity], [t].[OrderItemId], [t].[ProductId0]
+FROM [Orders] AS [o]
+INNER JOIN [AspNetUsers] AS [a] ON [o].[CustomerId] = [a].[Id]
+LEFT JOIN (
+    SELECT [o0].[ProductId], [p].[Name] AS [ProductName], [o0].[Quantity], [o0].[OrderItemId], [p].[ProductId] AS [ProductId0], [o0].[OrderId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[ProductId]
+) AS [t] ON [o].[OrderId] = [t].[OrderId]
+WHERE [o].[IsCancelled] = CAST(0 AS bit)
+ORDER BY [o].[OrderId], [a].[Id], [t].[OrderItemId]
+2024-10-04 14:59:13.706 +05:30  INF  Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderId], [a].[UserName], [o].[OrderDate], [o].[TotalAmount], [o].[IsPaid], [o].[OrderStatus], [o].[IsDelivered], [o].[ShippingAddress], [a].[Id], [t].[ProductId], [t].[ProductName], [t].[Quantity], [t].[OrderItemId], [t].[ProductId0]
+FROM [Orders] AS [o]
+INNER JOIN [AspNetUsers] AS [a] ON [o].[CustomerId] = [a].[Id]
+LEFT JOIN (
+    SELECT [o0].[ProductId], [p].[Name] AS [ProductName], [o0].[Quantity], [o0].[OrderItemId], [p].[ProductId] AS [ProductId0], [o0].[OrderId]
+    FROM [OrderItems] AS [o0]
+    INNER JOIN [Products] AS [p] ON [o0].[ProductId] = [p].[ProductId]
+) AS [t] ON [o].[OrderId] = [t].[OrderId]
+WHERE [o].[IsCancelled] = CAST(0 AS bit)
+ORDER BY [o].[OrderId], [a].[Id], [t].[OrderItemId]
+2024-10-04 14:59:13.713 +05:30  DBG  Closing data reader to 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:13.715 +05:30  DBG  A data reader for 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' is being disposed after spending 5ms reading results.
+2024-10-04 14:59:13.717 +05:30  DBG  Closing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:13.718 +05:30  DBG  Closed connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019' (1ms).
+2024-10-04 14:59:13.720 +05:30  INF  Executed action method Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 94.7258ms.
+2024-10-04 14:59:13.721 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:13.723 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-10-04 14:59:13.724 +05:30  VRB  Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:13.725 +05:30  VRB  Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-10-04 14:59:13.727 +05:30  VRB  Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:13.728 +05:30  VRB  Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:13.729 +05:30  VRB  Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:59:13.730 +05:30  DBG  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-04 14:59:13.732 +05:30  DBG  No information found on request to perform content negotiation.
+2024-10-04 14:59:13.733 +05:30  DBG  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-04 14:59:13.735 +05:30  DBG  Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-04 14:59:13.736 +05:30  DBG  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-04 14:59:13.737 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Ecom.Dtos.OrderDto, Application.Ecom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 14:59:13.744 +05:30  VRB  After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-10-04 14:59:13.744 +05:30  VRB  Connection id "0HN74AR995DLT" sending "HEADERS" frame for stream ID 7 with length 5 and flags "END_HEADERS".
+2024-10-04 14:59:13.745 +05:30  VRB  Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:13.747 +05:30  VRB  Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-10-04 14:59:13.748 +05:30  INF  Executed action Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce) in 132.5145ms
+2024-10-04 14:59:13.751 +05:30  VRB  Connection id "0HN74AR995DLT" sending "DATA" frame for stream ID 7 with length 2879 and flags "NONE".
+2024-10-04 14:59:13.752 +05:30  INF  Executed endpoint 'Web.Ecommerce.Controllers.Customer.OrderController.GetAllOrdersQuery (Web.Ecommerce)'
+2024-10-04 14:59:13.754 +05:30  DBG  'EcommerceDbContext' disposed.
+2024-10-04 14:59:13.754 +05:30  VRB  Connection id "0HN74AR995DLT" sending "DATA" frame for stream ID 7 with length 0 and flags "END_STREAM".
+2024-10-04 14:59:13.755 +05:30  DBG  Disposing connection to database 'Ecommerce' on server 'FGS-DSK-230\MSSQLSERVER2019'.
+2024-10-04 14:59:13.757 +05:30  DBG  Disposed connection to database '' on server '' (2ms).
+2024-10-04 14:59:13.759 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/api/Order/GetAllOrders - 200 null application/json; charset=utf-8 168.6555ms
+2024-10-04 14:59:17.517 +05:30  DBG  Connection id "0HN74AR995DLT" received FIN.
+2024-10-04 14:59:17.518 +05:30  DBG  Connection id "0HN74AR995DLT" is closed. The last processed stream ID was 7.
+2024-10-04 14:59:17.518 +05:30  DBG  The connection queue processing loop for 0HN74AR995DLT completed.
+2024-10-04 14:59:17.520 +05:30  DBG  Connection id "0HN74AR995DLT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 14:59:17.526 +05:30  DBG  Connection id "0HN74AR995DLT" stopped.

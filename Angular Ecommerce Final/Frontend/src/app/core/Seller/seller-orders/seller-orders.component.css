@@ -1,0 +1,38 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1E2761; /* Dark Blue */
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #7A2048; /* Light Blue */
+    color: white;
+}
+
+.order-table tr:hover {
+    background-color: #408ec69d; /* Dark Red */
+    color: rgb(0, 0, 0);
+}
+
+.order-table ul {
+    padding-left: 20px;
+    margin: 0;
+}

@@ -1,0 +1,29 @@
+2024-08-12 17:14:47.593 +05:30  INF  No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-08-12 17:14:47.919 +05:30  INF  Now listening on: https://localhost:7113
+2024-08-12 17:14:47.922 +05:30  INF  Now listening on: http://localhost:5081
+2024-08-12 17:14:47.925 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-12 17:14:47.927 +05:30  INF  Hosting environment: Development
+2024-08-12 17:14:47.927 +05:30  INF  Content root path: C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Presentation\Web.Ecommerce
+2024-08-12 17:14:49.234 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.html - null null
+2024-08-12 17:14:49.392 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.html - 200 null text/html;charset=utf-8 164.4911ms
+2024-08-12 17:14:49.896 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-12 17:14:49.896 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.js - null null
+2024-08-12 17:14:49.905 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.js - 200 null application/javascript;charset=utf-8 9.0151ms
+2024-08-12 17:14:49.919 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 23.4291ms
+2024-08-12 17:14:49.958 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - null null
+2024-08-12 17:14:49.998 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.9127ms
+2024-08-12 17:27:06.044 +05:30  INF  No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-08-12 17:27:06.429 +05:30  INF  User profile is available. Using 'C:\Users\arjun.hariprasad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 17:27:06.795 +05:30  INF  Now listening on: https://localhost:7113
+2024-08-12 17:27:06.797 +05:30  INF  Now listening on: http://localhost:5081
+2024-08-12 17:27:06.799 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-12 17:27:06.800 +05:30  INF  Hosting environment: Development
+2024-08-12 17:27:06.801 +05:30  INF  Content root path: C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Presentation\Web.Ecommerce
+2024-08-12 17:27:10.397 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.html - null null
+2024-08-12 17:27:10.886 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.html - 200 null text/html;charset=utf-8 498.2464ms
+2024-08-12 17:27:10.944 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-12 17:27:10.944 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/index.js - null null
+2024-08-12 17:27:10.956 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/index.js - 200 null application/javascript;charset=utf-8 11.9357ms
+2024-08-12 17:27:10.970 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 25.4624ms
+2024-08-12 17:27:11.046 +05:30  INF  Request starting HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - null null
+2024-08-12 17:27:11.084 +05:30  INF  Request finished HTTP/2 GET https://localhost:7113/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.0172ms

@@ -1,0 +1,12 @@
+.card {
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.btn-light {
+    color: #000; /* Text color for the button */
+}

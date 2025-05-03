@@ -1,0 +1,10 @@
+<app-seller-navbar [seller]="seller" ></app-seller-navbar>
+<div class="d-flex">
+    <app-sellersidebar></app-sellersidebar>
+</div>
+<div class="col-md-8 col-lg-9 col-xl-9 mt-5 ms-auto">
+    <div class="text-center">        
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<ngx-spinner type="ball-scale-multiple" [bdColor]="'rgba(51, 51, 51, 0.8)'" [size]="'large'" [color]="'#fff'" [fullScreen]="true"></ngx-spinner>

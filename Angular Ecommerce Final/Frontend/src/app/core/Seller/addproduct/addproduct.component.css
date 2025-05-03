@@ -1,0 +1,41 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1E2761; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #408EC6; /* Light Blue */
+}
+
+.btn-primary {
+    background-color: #408EC6; /* Light Blue */
+    color: white;
+    width: 100%; /* Full width for the button */
+}
+
+.text-danger {
+    font-size: 0.875rem;
+    margin-top: 5px;
+}

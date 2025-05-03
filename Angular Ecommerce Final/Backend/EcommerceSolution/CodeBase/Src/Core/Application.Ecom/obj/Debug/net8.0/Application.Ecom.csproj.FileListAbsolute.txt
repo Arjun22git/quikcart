@@ -1,0 +1,15 @@
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\bin\Debug\net8.0\Application.Ecom.deps.json
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\bin\Debug\net8.0\Application.Ecom.dll
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\bin\Debug\net8.0\Application.Ecom.pdb
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\bin\Debug\net8.0\Domain.dll
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\bin\Debug\net8.0\Domain.pdb
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.csproj.AssemblyReference.cache
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.AssemblyInfoInputs.cache
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.AssemblyInfo.cs
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.csproj.CoreCompileInputs.cache
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Applicat.876A9597.Up2Date
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.dll
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\refint\Application.Ecom.dll
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\Application.Ecom.pdb
+C:\Users\arjun.hariprasad\source\.NET\Ecommerce\EcommerceSolution\CodeBase\Src\Core\Application.Ecom\obj\Debug\net8.0\ref\Application.Ecom.dll

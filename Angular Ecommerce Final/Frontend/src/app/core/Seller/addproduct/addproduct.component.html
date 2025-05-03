@@ -1,0 +1,62 @@
+<div class="modal" [ngClass]="{'show': isVisible}" tabindex="-1" role="dialog" [style.display]="isVisible ? 'block' : 'none'" (click)="closeModal()">
+    <div class="modal-dialog" role="document" (click)="$event.stopPropagation()">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Product</h5>
+                <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="name">Product Name</label>
+                        <input type="text" id="name" formControlName="name" class="form-control" required>
+                        <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="text-danger">
+                            Product name is required.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" formControlName="description" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" id="category" formControlName="category" class="form-control" required>
+                        <div *ngIf="productForm.get('category')?.invalid && productForm.get('category')?.touched" class="text-danger">
+                            Category is required.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" formControlName="price" class="form-control" required>
+                        <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="text-danger">
+                            Valid price is required.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" formControlName="quantity" class="form-control" required>
+                        <div *ngIf="productForm.get('quantity')?.invalid && productForm.get('quantity')?.touched" class="text-danger">
+                            Valid quantity is required.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imageurl">Image URL</label>
+                        <input type="text" id="imageurl" formControlName="imageurl" class="form-control" required>
+                        <div *ngIf="productForm.get('imageurl')?.invalid && productForm.get('imageurl')?.touched" class="text-danger">
+                            Image URL is required.
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

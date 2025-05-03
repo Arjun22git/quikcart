@@ -1,0 +1,29 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+     color:#71d2ff
+}
+.nav-link{
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #71d2ff;
+    transition: color 0.3s ease-in-out;
+}
+
+.icons {
+    list-style-type: none;
+    display: flex;
+    margin-top: 12px;
+    padding: 5px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px; /* Adjusts spacing between icons */
+}
+
+.icons a:hover {
+    color: #71d2ff;
+}

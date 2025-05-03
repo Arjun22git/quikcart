@@ -1,0 +1,26 @@
+<div class="d-flex">
+    <!-- Top Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-p w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" routerLink="/dashboard">
+                <img src="assets/logo.png" alt="Logo" class="navbar-logo" width="60px" height="50px">Qwikart
+            </a>
+            <div class="d-flex ms-auto align-items-center">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="icons dropdown">
+                    <a href="#" data-bs-toggle="dropdown" title="User Profile" data-bs-placement="bottom">
+                        <i class="bi bi-person text-white"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item text-dark" href="#">{{admin}}</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" (click)="logout()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

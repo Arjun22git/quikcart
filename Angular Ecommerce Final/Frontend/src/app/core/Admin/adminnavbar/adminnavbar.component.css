@@ -1,0 +1,50 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:#71d2ff
+}
+.nav-link{
+   color: #ffffff;
+}
+
+.nav-link:hover {
+   color: #71d2ff;
+   transition: color 0.3s ease-in-out;
+}
+
+.icons {
+   list-style-type: none;
+   display: flex;
+   padding: 5px;
+}
+
+.icons a {
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 24px;
+   margin: 0 10px; /* Adjusts spacing between icons */
+}
+
+.dropdown-item{
+    font-size: 16px !important;
+}
+
+.icons a:hover {
+   color: #71d2ff;
+}
+.search-input {
+    width: 250px; /* Set a specific width for the search input */
+    border-radius: 20px; /* Rounded corners for a more modern look */
+    padding: 5px 10px; /* Padding for input */
+}
+
+.btn-light {
+    border-radius: 20px; /* Match the rounded corners of the search input */
+    padding: 5px 10px; /* Adjust button padding */
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.navbar-brand img {
+    vertical-align: middle; /* Align logo vertically in the center */
+}

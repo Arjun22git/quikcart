@@ -1,0 +1,50 @@
+<div class="modal" [ngClass]="{'show': isVisible}" tabindex="-1" role="dialog" (click)="closeModal()">
+    <div class="modal-dialog" role="document" (click)="$event.stopPropagation()">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Product</h5>
+                <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                    <input type="hidden" formControlName="productId"> 
+                    <div class="form-group">
+                        <label for="name">Product Name</label>
+                        <input type="text" id="name" formControlName="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Description</label>
+                        <input type="text" id="description" formControlName="description" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" id="category" formControlName="category" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" formControlName="price" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" formControlName="quantity" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUrl">Image URL</label>
+                        <input type="text" id="imageUrl" formControlName="imageUrl" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-spinner 
+    type="ball-scale-multiple" 
+    [bdColor]="'rgba(51, 51, 51, 0.8)'" 
+    [size]="'large'" 
+    [color]="'#fff'" 
+    [fullScreen]="true" 
+    *ngIf="isVisible">
+</ngx-spinner>

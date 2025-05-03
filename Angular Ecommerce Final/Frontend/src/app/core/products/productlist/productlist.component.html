@@ -1,0 +1,52 @@
+<div class="product-listing">
+  <h1>All Products</h1>
+
+  <div class="button-container d-flex justify-content-end m-4">
+    <button (click)="sortProducts()" class="btn btn-secondary btn-sm me-2">
+        <i class="bi bi-sort-alpha-down"></i> Sort
+    </button>
+    
+    <div class="search-container d-flex">
+        <input type="text" [(ngModel)]="searchTerm" (input)="currentPage = 1" placeholder="Search products..." class="form-control search-input" />
+        <button class="btn btn-primary search-button">
+            <i class="bi bi-search"></i>
+        </button>
+    </div>
+  </div>
+
+  @if(paginatedProducts.length > 0){
+    <div>
+      <div class="product-grid">
+        @for(product of paginatedProducts;track $index){
+          <div class="product-card">
+            <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image"/>
+            <div class="product-info">
+              <h2 class="product-name">{{ product.name }}</h2>
+              <p class="product-description">{{ product.description }}</p>
+              <p class="product-seller">{{ product.sellerName }}</p>
+              <div class="product-footer">
+                <span class="product-price">{{ product.price | currency:'INR':'symbol':'1.2-2' }}</span>
+                <button class="add-to-wishlist-btn" (click)="addToWishlist(product.productId)"><i class="bi bi-heart"></i></button>
+                <button class="add-to-cart-btn" (click)="addToCart(product.productId)"><i class="bi bi-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+        
+  
+      <div class="pagination-controls">
+        <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+        <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+      </div>
+    </div>
+
+  }
+  @if(paginatedProducts.length === 0){
+    <div>
+      <p>No products found.</p>
+    </div>
+  }
+  
+</div>

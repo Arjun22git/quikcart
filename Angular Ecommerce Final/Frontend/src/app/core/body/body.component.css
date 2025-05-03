@@ -1,0 +1,117 @@
+ /* Header Styles */
+ header {
+    position: relative;
+    height: 65vh;
+    
+}
+
+/* Overlay with flexbox */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 39, 97, 0.4); /* Darker overlay for better contrast */
+    z-index: 1;
+    display: flex; 
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; 
+    padding-right: 2rem; 
+}
+
+h1 {
+    font-size: 4.5rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.lead {
+    font-size: 2rem; /* Increased size for better visibility */
+    margin-top: 1rem; /* Add spacing */
+}
+
+/* Button Styles */
+.btn-shop-now {
+    background-color: #408EC6; /* Secondary color */
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem; /* Larger padding for the button */
+    transition: background-color 0.3s;
+    font-size: 1.25rem; /* Increased font size */
+    text-decoration: none; /* Remove underline */
+}
+
+.btn-shop-now:hover {
+    background-color: #1E2761; /* Primary color for hover */
+}
+
+/* Product badges */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #1E2761; /* Use primary color */
+}
+
+/* General styles for the section */
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #1E2761;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* Required for badge positioning */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Text styles */
+.card-body {
+    padding: 1.5rem;
+}
+
+.fw-bolder {
+    font-weight: 700;
+}
+
+/* Price styles */
+.card-body .text-center {
+    color: #555; /* Using a neutral color for text */
+    font-size: 1.25rem;
+}
+
+/* Icon styles */
+.icon-button {
+    padding: 0.5rem;
+    color: #408EC6; /* Icon color */
+    transition: color 0.3s;
+}
+
+.icon-button:hover {
+    color: #1E2761; /* Darker on hover */
+}

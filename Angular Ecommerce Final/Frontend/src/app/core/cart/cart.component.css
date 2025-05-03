@@ -1,0 +1,105 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-lg {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.text-dark {
+    color: #1E2761;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.btn-tertiary {
+    background-color: #408EC6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-tertiary:hover {
+    background-color: #3579a3;
+}
+
+.btn-primary {
+    background-color: #7A2048;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #65172d;
+}
+
+.table th {
+    background-color: #1E2761;
+    color: white;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.table .bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-warning {
+    color: #ffc107; /* Bootstrap star color */
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.my-4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.no-products-message {
+    text-align: center;
+    color: #7A2048; /* Dark Red */
+    margin-top: 20px;
+}

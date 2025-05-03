@@ -1,0 +1,27 @@
+<div class="user-list-table">
+    <h2>User List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Is Verified</th>
+          <th>Created At</th>
+          <th>Updated At</th>
+        </tr>
+      </thead>
+      <tbody>
+      @for(user of users;track $index){
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.userName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.isVerified ? "Yes" : "No" }}</td>
+        <td>{{ user.createdAt | date }}</td>
+        <td>{{ user.updatedAt | date }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

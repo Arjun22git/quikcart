@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="card border shadow-none">
+                    <div class="card-header bg-transparent border-bottom py-3 px-4">
+                        <h5 class="font-size-16 mb-0">Order Summary</h5>
+                    </div>
+                    <div class="card-body p-4 pt-2">
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td>Items in Cart:</td>
+                                        <td class="text-end">{{ cartItems.length }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sub Total:</td>
+                                        <td class="text-end">{{ cartTotal | currency:'INR':'symbol':'1.2-2' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount:</td>
+                                        <td class="text-end">{{ 0 | currency:'INR':'symbol':'1.2-2' }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping Charge:</td>
+                                        <td class="text-end"><del class="font-size-16 fw-normal text-danger">{{ 299 | currency:'INR':'symbol':'1.2-2' }}</del><span class="text-end text-success">Free!</span></td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <th>Total:</th>
+                                        <td class="text-end">
+                                            <span class="fw-bold">{{ cartTotal | currency:'INR':'symbol':'1.2-2'}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end table-responsive -->
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
+
+            <div class="col-xl-4">
+                <div class="mt-5 mt-lg-0">
+                    <div class="card border shadow-none">
+                        <div class="card-header bg-transparent border-bottom py-3 px-4">
+                            <h5 class="font-size-16 mb-0">Shipping Information</h5>
+                        </div>
+                        <div class="card-body p-4 pt-2">
+                            <form (ngSubmit)="submitShippingInfo()">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" class="form-control" required [(ngModel)]="shippingInfo.name" name="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea id="address" class="form-control" required [(ngModel)]="shippingInfo.address" name="address"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control" required [(ngModel)]="shippingInfo.phone" name="phone">
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary">
+                                        Proceed to Payment
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    @if(orderPlaced){
+        <div>
+            <app-payment [cartTotal]="cartTotal" [OrderId]="OrderId"></app-payment>
+        </div> 
+    }
+    <ngx-spinner
+        bdColor="rgba(0, 0, 0, 0.8)"
+        size="medium"
+        color="#fff"
+        type="ball-scale-multiple"
+        [fullScreen]="false">
+        <p style="color: white">Loading...</p>
+    </ngx-spinner>
+</section>

@@ -1,0 +1,60 @@
+.user-list-table {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .user-list-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .user-list-table th,
+  .user-list-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-list-table th {
+    background-color: #1E2761; /* Dark background */
+    color: white; /* White text */
+    font-weight: bold;
+  }
+  
+  .user-list-table tr:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+  }
+  
+  .user-list-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping */
+  }
+  
+  .user-list-table tr:last-child td {
+    border-bottom: none; /* Remove border from last row */
+  }
+  
+  .user-list-table td {
+    color: #555; /* Darker text color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-list-table td a {
+    color: #1E2761; /* Link color */
+    text-decoration: none;
+  }
+  
+  .user-list-table td a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

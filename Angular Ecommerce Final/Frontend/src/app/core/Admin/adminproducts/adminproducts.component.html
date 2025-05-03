@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 mb-3">
+            <div class="filter-container bg-light p-3 border rounded fixed-left">
+                <app-filter (filterChanged)="filterProducts()"></app-filter>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12">
+            <div class="product-list-container bg-light p-3 border rounded">
+                <app-productlist [products]="products"></app-productlist>
+            </div>
+        </div>
+    </div>
+</div>
